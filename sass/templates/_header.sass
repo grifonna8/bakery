@@ -1,0 +1,65 @@
+.header
+  background-color: $main-up
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 99
+  padding-top: 0.5rem
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__logo
+    position: absolute
+    left: -1.5rem
+    top: -1rem
+    &--upper
+      z-index: 2
+  &__text-wrapper
+    display: flex
+    margin-left: 2.8rem
+    flex-direction: column
+    justify-content: center
+  &__text
+    &--downer
+      color: $red
+      font-size: 1.076rem
+    &--upper
+      color: $additional
+      font-size: 1.78rem
+      text-transform: uppercase
+.logo-wrapper
+  position: relative
+  display: flex
+  flex-direction: row
+.icon-phone
+  color: $red
+  &:before
+    margin: 0
+    margin-right: 0.35rem
+.icon-right
+  color: $red
+  &:before
+    margin: 0
+    margin-right: 0.4rem
+.phone
+  font-family: 'Roboto Regular', sans-serif
+  color: $additional
+  text-decoration: none
+.contacts
+  &__phone 
+  font-size: 1.142rem
+  &__figures
+    font-size: 1.714rem
+  &__button
+    margin: 0
+    font-size: 1rem
+    font-weight: bold
+    cursor: pointer
+.call-back
+  display: flex
+  justify-content: flex-start
+  
+    
+      
