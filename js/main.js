@@ -21,4 +21,15 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   })
+
+  jwplayer("player").setup({
+  image:"img/main-advantages/preload.jpg",
+  file:"http://grifonna8.ru/video/video.mp4",
+  width:"621",
+  height:"349",
+  controls:true,
+  autostart:false,
+  mute:false,
+  stretching:"uniform",
+  });
 });
