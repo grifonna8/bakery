@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Балашиха Хлеб</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
           <div class="call-back">
             <span class="icon-phone"></span>
             <span class="icon-right"></span>
-            <button class="button contacts__button" data-toggle='form'>Перезвоните мне!</button>
+            <button class="button contacts__button" data-toggle='modal'>Перезвоните мне!</button>
           </div>
         </div>
         <!-- /.contacts menu__contacts -->
@@ -60,26 +61,25 @@
             </div>
             <div class="hero__form">
               <div class="hero__form__dialogue">
-                <button class="form__close"></button>
                 <div class="hero__form__wrapper">
                   <h3 class="hero__form__title">Получите персональное <span class="hero__form__title hero__form__title--small">коммерческое предложение</span> </h3>
                   <form action="send.php" method="POST" class="form hero__form">
                     <div class="input-group hero__form__input-group">
                       <label for="hero-user-name" class="label hero__form__label"></label>
                       <input type="text" autocomplete="off" name="userName" class="input form__input hero__input " id="hero-user-name" placeholder="Ваше имя">
-                      <img src="img/person.png" alt="" class="image name">
+                      <img src="img/person.png" alt="" class="image">
                     </div>
                     <!-- /.input-group form__input-group -->
                     <div class="input-group hero__form__input-group">
                       <label for="hero-user-email" class="label hero__form__label"></label>
                       <input type="email" autocomplete="off" name="userEmail" class="input form__input hero__input" id="hero-user-email" placeholder="Ваш email">
-                      <img src="img/email.png" alt="" class="image email">
+                      <img src="img/email.png" alt="" class="image">
                     </div>
                     <!-- /.input-group form__input-group -->
                     <div class="input-group hero__form__input-group">
                       <label for="hero-user-phone" class="label hero__form__label"></label>
                       <input type="tel" autocomplete="off" name="userPhone" class="input form__input hero__input" id="hero-user-phone" placeholder="Ваш номер телефона">
-                      <img src="img/phone.png" alt="" class="image phone">
+                      <img src="img/phone.png" alt="" class="image">
                     </div>
                     <!-- /.input-group form__input-group -->
                     <button class="button form__button hero__form__button">Получить КП!</button>
@@ -105,8 +105,108 @@
     </section>
     <!-- /.hero -->
 
+    <section class="photos">
+      <div class="container">
+        <div class="section-title__wrapper">
+          <h2 class="section-title">Фотографии нашего завода</h2>
+          <div class="section-title__logo">
+            <img src="img/logo-small.svg" alt="">
+          </div>
+        </div>
+        <!-- /.section-title__wrapper -->
+        <div class="row">
+          <div class="col-60">
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiper-no-swiping">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="img/photos/swiper-image-1.png" alt="" class="photos__image-border">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/photos/swiper-image-2.jpg" alt="" class="photos__image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/photos/swiper-image-3.jpg" alt="" class="photos__image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/photos/swiper-image-4.jpg" alt="" class="photos__image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/photos/swiper-image-5.jpg" alt="" class="photos__image">
+                  </div>
+                  
+              </div>
+              <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                  <img src="img/arrow-prev.svg" alt="" class="swiper-button-prev-img">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">
+                  <img src="img/arrow-next.svg" alt="" class="swiper-button-next-img">
+                </div>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.col-60 -->
+
+          <div class="col-40">
+            <span class="photos__text">Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной продукции.</span>
+            <span class="photos__text">Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция, которая давно стала визитной карточкой края.</span>
+          </div>
+          <!-- /.col-40 -->
+          
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.photos -->
+
+
+    <div class="modal">
+      <div class="modal__dialogue">
+        <button class="modal__close"></button>
+        <div class="modal__form__wrapper">
+          <h3 class="modal__form__title">Получите персональное <span class="modal__form__title modal__form__title--small">коммерческое предложение</span> </h3>
+          <form action="send.php" method="POST" class="form modal__form">
+            <div class="input-group modal__form__input-group">
+              <label for="modal-user-name" class="label modal__form__label"></label>
+              <input type="text" autocomplete="off" name="userName" class="input form__input modal__input " id="modal-user-name" placeholder="Ваше имя">
+              <img src="img/person.png" alt="" class="image modal__image">
+            </div>
+            <!-- /.input-group form__input-group -->
+            <div class="input-group modal__form__input-group">
+              <label for="modal-user-email" class="label modal__form__label"></label>
+              <input type="email" autocomplete="off" name="userEmail" class="input form__input modal__input" id="modal-user-email" placeholder="Ваш email">
+              <img src="img/email.png" alt="" class="image modal__image">
+            </div>
+            <!-- /.input-group form__input-group -->
+            <div class="input-group modal__form__input-group">
+              <label for="modal-user-phone" class="label modal__form__label"></label>
+              <input type="tel" autocomplete="off" name="userPhone" class="input form__input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона">
+              <img src="img/phone.png" alt="" class="image modal__image">
+            </div>
+            <!-- /.input-group form__input-group -->
+            <button class="button form__button modal__form__button">Получить КП!</button>
+            <div class="form__safety-wrapper">
+              <img src="img/safe.png" alt="" class="safety">
+              <div class="form__safety">Ваши данные не будут переданны третьим лицам, согласно законам РФ</div>
+              <img src="img/safe.png" alt="" class="safety">
+              </div>
+            <!-- /.form__safety -->
+          </form>
+          <!-- /.form hero__form -->
+        </div>
+      </div>
+      <!-- /.form__dialogue -->
+    </div>
+    <!-- /.form -->
   </main>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

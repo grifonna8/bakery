@@ -1,3 +1,5 @@
+input::placeholder
+  padding-left: 1rem
 .contacts
   &__button
     padding: 0
@@ -9,7 +11,17 @@
   position: absolute
   top: 1rem
   right: 1.1rem
-.form
+.modal
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($black-font, 0.7)
   &__close
     position: absolute
     top: 0
@@ -21,7 +33,8 @@
     margin: 5px
     cursor: pointer
     outline: none
-    color: $main
+  &--visible
+    visibility: visible
   &__input
     margin-top: 6px
     width: 100%
@@ -47,28 +60,15 @@
     max-width: 13.714rem
     max-height: 1.57rem
     text-align: center
-input::placeholder
-  padding-left: 1rem
-.hero
   &__input
     outline: none
   &__form
     display: flex
     flex-direction: column
+    &__input-group
+      position: relative
     &__button
       margin-top: 1rem
-    &__dialogue
-      background-color: $red
-      max-width: 21.4rem
-      max-height: 26.4rem
-      border: 5px solid $main-up
-    &__wrapper
-      top: 0
-      bottom: 0
-      left: 0
-      right: 0
-      margin: auto
-      width: 90%
     &__title
       color: $main
       text-transform: uppercase
@@ -78,6 +78,19 @@ input::placeholder
       font-size: 1.5rem
       &--small
         font-size: 1.285rem
-    &__input-group
+    &__wrapper
       position: relative
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 90%    
+  &__dialogue
+    position: relative
+    background-color: $red
+    max-width: 21.4rem
+    max-height: 26.4rem
+    border: 5px solid $main-up
+
    
