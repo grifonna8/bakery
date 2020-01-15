@@ -382,6 +382,12 @@ template {
   max-width: 1000px;
   margin: auto; }
 
+.row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -899,3 +905,50 @@ input::placeholder {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px; }
+
+.advantages {
+  background: #FFF9E6;
+  padding-bottom: 3rem; }
+  .advantages__fact-wrapper {
+    margin-bottom: 1.714rem; }
+    .advantages__fact-wrapper--inner {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      align-items: center;
+      min-height: 105px; }
+  .advantages__fact-text-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 105px;
+    margin-left: 1.214rem;
+    justify-content: space-around;
+    max-width: 25.2rem; }
+  .advantages__fact-text__title {
+    font-weight: 600;
+    font-size: 1.285rem;
+    display: inline-block; }
+  .advantages__fact-text__text {
+    font-size: 1.071rem;
+    display: inline-block; }
+
+.col-50 {
+  width: 50%; }
+  .col-50--left {
+    margin-right: 2.64rem; }
+
+.fact-ring {
+  background: url("../img/advantages/ring-small.png") center no-repeat;
+  min-height: 105px;
+  min-width: 105px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center; }
