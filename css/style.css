@@ -952,3 +952,66 @@ input::placeholder {
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center; }
+
+.catalogue {
+  padding-bottom: 1.5rem; }
+  .catalogue__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+
+.card__image {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center; }
+
+.card__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid transparent; }
+  .card__item:hover {
+    border: 1px solid #D6D6D6; }
+
+.card__text-title {
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  font-size: 1.285rem; }
+
+.card__text-text {
+  font-weight: 300;
+  display: block;
+  font-size: 1.071rem;
+  text-align: center; }
+
+.info {
+  margin-top: 1.285rem;
+  margin-bottom: 0.95rem;
+  text-transform: uppercase;
+  color: #F64747;
+  background: transparent;
+  border: 1px solid #F64747;
+  padding: 12px 18px; }
+  .info:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #F64747; }
