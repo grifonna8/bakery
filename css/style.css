@@ -526,6 +526,313 @@ input::placeholder {
   .hero__form__input-group {
     position: relative; }
 
+#player {
+  border: 5px solid white;
+  border-radius: 12px;
+  margin-left: 38%; }
+
+#player .jwdisplay:hover #player_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px;
+  cursor: pointer; }
+
+#player_display_button #player_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px; }
+
+#player .jwdisplay:hover #player_display_button {
+  background: none !important; }
+
+#player_display_button {
+  background: none !important; }
+
+#player_logo {
+  display: none !important; }
+
+#player_controlbar .jwplay button:hover {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player_controlbar .jwplay button {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player_controlbar .jwtimeSliderThumb {
+  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
+  width: 19px !important; }
+
+#player_controlbar .jwbackground {
+  background: #273747 !important; }
+
+#player_controlbar .jwcapRight {
+  background: #273747 !important; }
+
+#player_controlbar .jwcapLeft {
+  background: #273747 !important; }
+
+#player_display .jwpreview {
+  border-radius: 8px; }
+  #player_display .jwpreview::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px; }
+
+#player--first {
+  border: 5px solid white;
+  border-radius: 12px; }
+
+#player--first .jwdisplay:hover #player--first_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px;
+  cursor: pointer; }
+
+#player--first_display_button #player--first_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px; }
+
+#player--first .jwdisplay:hover #player--first_display_button {
+  background: none !important; }
+
+#player--first_display_button {
+  background: none !important; }
+
+#player--first_logo {
+  display: none !important; }
+
+#player--first_controlbar .jwplay button:hover {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--first_controlbar .jwplay button {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--first_controlbar .jwtimeSliderThumb {
+  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
+  width: 19px !important; }
+
+#player--first_controlbar .jwbackground {
+  background: #273747 !important; }
+
+#player--first_controlbar .jwcapRight {
+  background: #273747 !important; }
+
+#player--first_controlbar .jwcapLeft {
+  background: #273747 !important; }
+
+#player--first_display .jwpreview {
+  border-radius: 8px; }
+  #player--first_display .jwpreview::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px; }
+
+#player--second {
+  border: 5px solid white;
+  border-radius: 12px; }
+
+#player--second .jwdisplay:hover #player--second_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px;
+  cursor: pointer; }
+
+#player--second_display_button #player--second_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px; }
+
+#player--second .jwdisplay:hover #player--second_display_button {
+  background: none !important; }
+
+#player--second_display_button {
+  background: none !important; }
+
+#player--second_logo {
+  display: none !important; }
+
+#player--second_controlbar .jwplay button:hover {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--second_controlbar .jwplay button {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--second_controlbar .jwtimeSliderThumb {
+  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
+  width: 19px !important; }
+
+#player--second_controlbar .jwbackground {
+  background: #273747 !important; }
+
+#player--second_controlbar .jwcapRight {
+  background: #273747 !important; }
+
+#player--second_controlbar .jwcapLeft {
+  background: #273747 !important; }
+
+#player--second_display .jwpreview {
+  border-radius: 8px; }
+  #player--second_display .jwpreview::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px; }
+
+#player--third {
+  border: 5px solid white;
+  border-radius: 12px; }
+
+#player--third .jwdisplay:hover #player--third_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px;
+  cursor: pointer; }
+
+#player--third_display_button #player--third_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px; }
+
+#player--third .jwdisplay:hover #player--third_display_button {
+  background: none !important; }
+
+#player--third_display_button {
+  background: none !important; }
+
+#player--third_logo {
+  display: none !important; }
+
+#player--third_controlbar .jwplay button:hover {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--third_controlbar .jwplay button {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--third_controlbar .jwtimeSliderThumb {
+  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
+  width: 19px !important; }
+
+#player--third_controlbar .jwbackground {
+  background: #273747 !important; }
+
+#player--third_controlbar .jwcapRight {
+  background: #273747 !important; }
+
+#player--third_controlbar .jwcapLeft {
+  background: #273747 !important; }
+
+#player--third_display .jwpreview {
+  border-radius: 8px; }
+  #player--third_display .jwpreview::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px; }
+
+#player--fourth {
+  border: 5px solid white;
+  border-radius: 12px; }
+
+#player--fourth .jwdisplay:hover #player--fourth_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px;
+  cursor: pointer; }
+
+#player--fourth_display_button #player--fourth_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px; }
+
+#player--fourth .jwdisplay:hover #player--fourth_display_button {
+  background: none !important; }
+
+#player--fourth_display_button {
+  background: none !important; }
+
+#player--fourth_logo {
+  display: none !important; }
+
+#player--fourth_controlbar .jwplay button:hover {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--fourth_controlbar .jwplay button {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--fourth_controlbar .jwtimeSliderThumb {
+  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
+  width: 19px !important; }
+
+#player--fourth_controlbar .jwbackground {
+  background: #273747 !important; }
+
+#player--fourth_controlbar .jwcapRight {
+  background: #273747 !important; }
+
+#player--fourth_controlbar .jwcapLeft {
+  background: #273747 !important; }
+
+#player--fourth_display .jwpreview {
+  border-radius: 8px; }
+  #player--fourth_display .jwpreview::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px; }
+
+#player--fifth {
+  border: 5px solid white;
+  border-radius: 12px; }
+
+#player--fifth .jwdisplay:hover #player--fifth_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px;
+  cursor: pointer; }
+
+#player--fifth_display_button #player--fifth_display_button_play {
+  background: url("../img/main-advantages/play.png") center no-repeat !important;
+  height: 80px; }
+
+#player--fifth .jwdisplay:hover #player--fifth_display_button {
+  background: none !important; }
+
+#player--fifth_display_button {
+  background: none !important; }
+
+#player--fifth_logo {
+  display: none !important; }
+
+#player--fifth_controlbar .jwplay button:hover {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--fifth_controlbar .jwplay button {
+  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
+
+#player--fifth_controlbar .jwtimeSliderThumb {
+  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
+  width: 19px !important; }
+
+#player--fifth_controlbar .jwbackground {
+  background: #273747 !important; }
+
+#player--fifth_controlbar .jwcapRight {
+  background: #273747 !important; }
+
+#player--fifth_controlbar .jwcapLeft {
+  background: #273747 !important; }
+
+#player--fifth_display .jwpreview {
+  border-radius: 8px; }
+  #player--fifth_display .jwpreview::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px; }
+
 .header {
   background-color: #F7E4B2;
   position: fixed;
@@ -794,42 +1101,46 @@ input::placeholder {
 
 .swiper-container {
   width: 600px;
-  height: 300px; }
+  height: 345px; }
 
 .photos__image {
   border: 4px solid #FFFFFF; }
 
+.swiper-navigation-wrapper {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: rgba(27, 27, 27, 0.3);
+  border-radius: 3px;
+  width: 100px;
+  height: 20px;
+  margin-left: 16.5rem;
+  bottom: 7rem;
+  z-index: 11; }
+
 .swiper-pagination-bullet {
+  margin-right: 5px;
   display: inline-block;
   background-color: #FFFFFF;
   opacity: 1;
   border-radius: 0px; }
   .swiper-pagination-bullet-active {
-    background-color: #F64747; }
+    background-color: #F64747;
+    outline: none; }
 
 .swiper-button-prev {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  position: absolute;
-  width: 8.1rem;
-  height: 20px;
-  bottom: 8px;
-  background: rgba(27, 27, 27, 0.3);
-  border-radius: 3px;
-  top: auto;
-  margin-left: 39%; }
+  left: -3px;
+  outline: none; }
   .swiper-button-prev::after {
     display: none; }
-  .swiper-button-prev-img {
-    padding-left: 0.5rem; }
 
 .swiper-button-next {
-  margin-right: 38%;
-  position: absolute;
-  bottom: -5px;
-  top: auto; }
+  right: 0;
+  outline: none; }
   .swiper-button-next::after {
     display: none; }
 
@@ -853,58 +1164,6 @@ input::placeholder {
 .main-advantages {
   background: url("../img/main-advantages/bg-main-advantages-1.png") no-repeat 80px 285px, url("../img/main-advantages/bg-main-advantages-2.png") no-repeat 50px 5px, url("../img/main-advantages/bg-main-advantages-3.png") right -50px top 120px no-repeat;
   padding-bottom: 8.6rem; }
-
-#player {
-  border: 5px solid white;
-  border-radius: 12px;
-  margin-left: 38%; }
-
-#player .jwdisplay:hover #player_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px;
-  cursor: pointer; }
-
-#player_display_button #player_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px; }
-
-#player .jwdisplay:hover #player_display_button {
-  background: none !important; }
-
-#player_display_button {
-  background: none !important; }
-
-#player_logo {
-  display: none !important; }
-
-#player_controlbar .jwplay button:hover {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player_controlbar .jwplay button {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player_controlbar .jwtimeSliderThumb {
-  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
-  width: 19px !important; }
-
-#player_controlbar .jwbackground {
-  background: #273747 !important; }
-
-#player_controlbar .jwcapRight {
-  background: #273747 !important; }
-
-#player_controlbar .jwcapLeft {
-  background: #273747 !important; }
-
-#player_display .jwpreview {
-  border-radius: 8px; }
-  #player_display .jwpreview::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 8px; }
 
 .advantages {
   background: #FFF9E6;
@@ -1015,3 +1274,36 @@ input::placeholder {
     cursor: pointer;
     color: #FFFFFF;
     background: #F64747; }
+
+.about {
+  padding-bottom: 5rem;
+  background: grey; }
+  .about__slider__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center; }
+
+.item-video {
+  height: 349px; }
+
+.swiper-container {
+  width: 621px;
+  height: 349px; }
+
+.swiper-navigation-wrapper-about {
+  position: relative;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: rgba(27, 27, 27, 0.3);
+  border-radius: 3px;
+  width: 100px;
+  height: 20px;
+  margin-left: 31.5rem;
+  bottom: 0;
+  z-index: 11; }
