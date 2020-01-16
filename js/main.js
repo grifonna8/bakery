@@ -24,6 +24,7 @@ $(document).ready(function () {
   });
 
   var mySwiper1 = new Swiper ('#swiper-container-about', {
+    loop:true,
     pagination: {
       el: '.swiper-pagination-about',
       type: 'bullets',
@@ -81,10 +82,10 @@ $(document).ready(function () {
   });
 
   jwplayer("player--first").setup({
-  image:"img/main-advantages/preload.jpg",
+  image:"img/about/preload.jpg",
   file:"http://grifonna8.ru/video/video.mp4",
-  width:"621",
-  height:"349",
+  width:"419",
+  height:"250",
   controls:true,
   autostart:false,
   mute:false,
@@ -92,10 +93,10 @@ $(document).ready(function () {
   });
 
   jwplayer("player--second").setup({
-  image:"img/main-advantages/preload.jpg",
+  image:"img/about/preload.jpg",
   file:"http://grifonna8.ru/video/video2.mp4",
-  width:"621",
-  height:"349",
+  width:"419",
+  height:"250",
   controls:true,
   autostart:false,
   mute:false,
@@ -103,10 +104,10 @@ $(document).ready(function () {
   });
 
   jwplayer("player--third").setup({
-  image:"img/main-advantages/preload.jpg",
+  image:"img/about/preload.jpg",
   file:"http://grifonna8.ru/video/video3.mp4",
-  width:"621",
-  height:"349",
+  width:"419",
+  height:"250",
   controls:true,
   autostart:false,
   mute:false,
@@ -114,10 +115,10 @@ $(document).ready(function () {
   });
   
   jwplayer("player--fourth").setup({
-  image:"img/main-advantages/preload.jpg",
+  image:"img/about/preload.jpg",
   file:"http://grifonna8.ru/video/video4.mp4",
-  width:"621",
-  height:"349",
+  width:"419",
+  height:"250",
   controls:true,
   autostart:false,
   mute:false,
@@ -125,10 +126,10 @@ $(document).ready(function () {
   });
   
   jwplayer("player--fifth").setup({
-  image:"img/main-advantages/preload.jpg",
+  image:"img/about/preload.jpg",
   file:"http://grifonna8.ru/video/video5.mp4",
-  width:"621",
-  height:"349",
+  width:"419",
+  height:"250",
   controls:true,
   autostart:false,
   mute:false,
