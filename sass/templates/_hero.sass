@@ -1,8 +1,6 @@
 .hero
   position: relative
-  padding-top: 10.06rem
-  height: 100vh
-  padding-bottom: 5rem
+  padding-top: 9.2rem
   &__header
     font-family: 'Roboto Condensed', sans-serif
     text-transform: uppercase
@@ -11,6 +9,8 @@
     font-size: 3.285rem
     margin: 0
   &__subtitle
+    position: relative
+    margin-top: 0
     font-size: 1.57rem
     color: $black-font
   &__content
@@ -19,7 +19,7 @@
     flex-direction: row
     justify-content: space-between
     align-items: flex-end
-    margin-top: 2rem
+    margin-top: 2.3rem
     margin-bottom: 4rem
   &__header
     display: flex
@@ -29,11 +29,15 @@
     display: flex
     align-items: center
     justify-content: center
-    width: 14.14rem
-    height: 14.14rem
+    width: 198px
+    height: 198px
     background: url('../img/ring-big.png') no-repeat center
   &__fact-text
+    display: flex
+    justify-content: center
+    align-items: center
     text-align: center
+    vertical-align: middle
     max-width: 9rem
     max-height: 3.78rem
     font-family: 'Roboto Condensed', sans-serif
@@ -41,14 +45,18 @@
     text-transform: uppercase
     &--last
       max-width: 11rem
+.hero
   &__image
-    &__bread
-      position: absolute
-      z-index: -1
-      left: 11%
-      bottom: 12%
     &__ear
+      display: none
+      z-index: -2
       position: absolute
-      z-index: -1
-      right: 2%
-      bottom: 14%
+      right: -15rem
+      top: 0
+      max-height: 419px
+    &__bread
+      z-index: -2
+      position: absolute
+      top: -14rem
+      left: -10rem
+

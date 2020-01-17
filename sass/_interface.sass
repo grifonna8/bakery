@@ -39,7 +39,7 @@
   &__safety-wrapper
     display: flex
     justify-content: space-between
-    margin-top: 0.857rem
+    margin-top: 0.5rem
     margin-bottom: 1.785rem
   &__safety
     font-size: 0.78rem
@@ -53,6 +53,7 @@ input::placeholder
   &__input
     outline: none
   &__form
+    position: relative
     display: flex
     flex-direction: column
     &__button
@@ -60,7 +61,7 @@ input::placeholder
     &__dialogue
       background-color: $red
       max-width: 21.4rem
-      max-height: 26.4rem
+      max-height: 26.6rem
       border: 5px solid $main-up
     &__wrapper
       top: 0
@@ -80,4 +81,34 @@ input::placeholder
         font-size: 1.285rem
     &__input-group
       position: relative
-   
+
+.offering
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    &__input-group
+      position: relative
+    &__button
+      background: transparent
+      border: 2px solid $button--primary
+      padding: 1px 2.5rem
+      outline: none
+      &:hover
+        color: $white
+        background: $button--primary
+  &__input
+    width: 17.92rem
+    border: none
+    border-radius: 3px
+    &::placeholder
+      color: black
+  &__input
+    outline: none
+.input-group-wrapper
+  display: flex
+  justify-content: space-between
+  width: 56.22rem
+  margin-bottom: 1.285rem

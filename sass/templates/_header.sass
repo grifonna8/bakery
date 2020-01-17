@@ -3,6 +3,7 @@
   position: fixed
   left: 0
   top: 0
+  right: 0
   width: 100%
   z-index: 99
   padding-top: 0.5rem
@@ -21,19 +22,24 @@
     margin-left: 2.8rem
     flex-direction: column
     justify-content: center
+    margin-top: -1rem
   &__text
     &--downer
       color: $red
-      font-size: 1.076rem
+      font-size: 0.78rem
+      margin-bottom: -0.2rem
     &--upper
       color: $additional
       font-size: 1.78rem
       text-transform: uppercase
       font-family: 'Magistral Cond', sans-serif
+  &__contacts
+    margin-top: -1rem
 .logo-wrapper
   position: relative
   display: flex
   flex-direction: row
+  margin-left: 1.3rem
 .icon-phone
   color: $red
   &:before

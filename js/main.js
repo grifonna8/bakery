@@ -10,7 +10,7 @@ $(document).ready(function () {
     form.toggleClass('modal--visible');
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('#swiper-container', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',

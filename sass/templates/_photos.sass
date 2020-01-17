@@ -1,13 +1,29 @@
 .photos  
-  background: url('../img/photos/bg-photos-1.png') -20px 100px no-repeat, url('../img/photos/bg-photos-2.png') 340px 100px no-repeat $main
+  padding-top: 0.9rem
+  background: $main
   position: relative
-  padding-bottom: 4.35rem
-.swiper-container
-  width: 600px
-  height: 345px
-.photos
+  padding-bottom: 4rem
   &__image
     border: 4px solid $white
+  &__text
+    &--first
+      margin-top: 1.1rem
+      margin-bottom: -1.4rem
+      
+.bg-photo
+  &--first
+    display: none
+    position: absolute
+    left: -19.5rem
+    top: 11rem
+  &--second
+    display: none
+    position: absolute
+    top: 10.5rem
+    left: 6rem
+.swiper-container
+  width: 566px
+  height: 334px
 .swiper
   &-navigation
     &-wrapper
@@ -19,8 +35,8 @@
       border-radius: 3px
       width: 100px
       height: 20px
-      margin-left: 16.5rem
-      bottom: 7rem
+      margin-left: 17.5rem
+      bottom: 5.5rem
       z-index: 11
   &-pagination
     &-bullet
@@ -48,6 +64,9 @@
 .col-60
   width: 60%
 .col-40
+  font-weight: 300
+  line-height: 1.7rem
+  margin-left: 2rem
   width: 40%
   display: flex
   flex-direction: column
