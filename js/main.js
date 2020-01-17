@@ -11,6 +11,7 @@ $(document).ready(function () {
   });
 
   var mySwiper = new Swiper ('#swiper-container', {
+    noSwiping:true,
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -20,6 +21,11 @@ $(document).ready(function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      991: {
+        noSwiping:false,
+      }
     },
   });
 

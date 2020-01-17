@@ -1,3 +1,14 @@
+@media screen and ( min-width: 1500px )
+  .bg-main-advantages
+    &--third
+      display: initial
+  .bg-main-advantages
+    &--first
+      display: initial
+    &--second
+      display: initial
+
+
 @media screen and ( min-width: 1400px )
   .hero
     &__image
@@ -7,10 +18,24 @@
     &--first
       display: initial
 
+@media screen and ( min-width: 1201px ) and ( max-width: 1499px )
+  .bg-main-advantages
+    &--first
+      display: initial
+      left: -3rem
+    &--second
+      display: initial
+      left: -5rem
 @media screen and ( min-width: 1200px )
   .bg-photo
     &--second
       display: initial
+
+@media screen and ( max-width: 1200px )
+  .main-advantages
+    padding-bottom: 4rem
+    &__player-wrapper
+      justify-content: center
 
 @media screen and ( max-width: 1100px )
   html
@@ -67,6 +92,10 @@
         margin: 0
         padding-bottom: 1rem
         padding-top: 1rem
+  .swiper
+    &-navigation
+      &-wrapper
+        display: none
 
 @media screen and ( max-width: 768px )
   .hero
@@ -84,6 +113,14 @@
   .swiper-container
     width: 466px
     height: 234px
+  .contacts
+    &__figures
+      font-size: 1rem
+    &__button
+      font-size: 0.7rem
+  // #player
+  //   width: 521px
+  //   height: 249px
 
 
 @media screen and ( max-width: 576px )
@@ -93,7 +130,7 @@
   .hero
     padding-top: 5rem  
   .menu
-    margin-top: 1rem
+    margin-top: 1.5rem
   .logo
     display: none
     &-wrapper
@@ -114,11 +151,15 @@
     &__subtitle
       width: 20rem
       text-align: center
-  .swiper-container
-    width: 180px
-    height: 234px
+  .swiper
+    &-container
+      width: 180px
+      height: 234px
+    &-object
+      height: 120px         
   .photos
     &__text
       font-size: 1.1rem
+    
 
   

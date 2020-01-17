@@ -405,6 +405,7 @@ img {
   text-align: center; }
 
 .section-title {
+  position: relative;
   padding-top: 3.4rem;
   margin-bottom: 0;
   margin-top: 0;
@@ -580,8 +581,7 @@ input::placeholder {
 
 #player {
   border: 5px solid white;
-  border-radius: 12px;
-  margin-left: 38%; }
+  border-radius: 12px; }
 
 #player .jwdisplay:hover #player_display_button_play {
   background: url("../img/main-advantages/play.png") center no-repeat !important;
@@ -1176,7 +1176,7 @@ input::placeholder {
   padding-top: 0.9rem;
   background: #FFF9E6;
   position: relative;
-  padding-bottom: 4rem; }
+  padding-bottom: 4.5rem; }
   .photos__image {
     border: 4px solid #FFFFFF; }
   .photos__text--first {
@@ -1258,8 +1258,33 @@ input::placeholder {
   justify-content: space-around; }
 
 .main-advantages {
-  background: url("../img/main-advantages/bg-main-advantages-1.png") no-repeat 80px 285px, url("../img/main-advantages/bg-main-advantages-2.png") no-repeat 50px 5px, url("../img/main-advantages/bg-main-advantages-3.png") right -50px top 120px no-repeat;
-  padding-bottom: 8.6rem; }
+  padding-bottom: 9rem; }
+  .main-advantages__player-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end; }
+
+.bg-main-advantages--first {
+  display: none;
+  position: absolute;
+  left: -13rem;
+  top: 20.5rem;
+  z-index: -1; }
+
+.bg-main-advantages--second {
+  display: none;
+  position: absolute;
+  left: -15rem;
+  top: 0.7rem;
+  z-index: -2; }
+
+.bg-main-advantages--third {
+  display: none;
+  position: absolute;
+  right: -22rem;
+  top: 7rem;
+  z-index: -3; }
 
 .advantages {
   background: #FFF9E6;
@@ -1417,15 +1442,38 @@ input::placeholder {
   .offering__section-title {
     color: #FFFFFF; }
 
+@media screen and (min-width: 1500px) {
+  .bg-main-advantages--third {
+    display: initial; }
+  .bg-main-advantages--first {
+    display: initial; }
+  .bg-main-advantages--second {
+    display: initial; } }
+
 @media screen and (min-width: 1400px) {
   .hero__image__ear {
     display: initial; }
   .bg-photo--first {
     display: initial; } }
 
+@media screen and (min-width: 1201px) and (max-width: 1499px) {
+  .bg-main-advantages--first {
+    display: initial;
+    left: -3rem; }
+  .bg-main-advantages--second {
+    display: initial;
+    left: -5rem; } }
+
 @media screen and (min-width: 1200px) {
   .bg-photo--second {
     display: initial; } }
+
+@media screen and (max-width: 1200px) {
+  .main-advantages {
+    padding-bottom: 4rem; }
+    .main-advantages__player-wrapper {
+      -webkit-box-pack: center;
+      justify-content: center; } }
 
 @media screen and (max-width: 1100px) {
   html {
@@ -1471,7 +1519,9 @@ input::placeholder {
     .photos__text--first {
       margin: 0;
       padding-bottom: 1rem;
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+  .swiper-navigation-wrapper {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .hero__image__bread {
@@ -1486,7 +1536,11 @@ input::placeholder {
     margin-bottom: 2rem; }
   .swiper-container {
     width: 466px;
-    height: 234px; } }
+    height: 234px; }
+  .contacts__figures {
+    font-size: 1rem; }
+  .contacts__button {
+    font-size: 0.7rem; } }
 
 @media screen and (max-width: 576px) {
   .header {
@@ -1495,7 +1549,7 @@ input::placeholder {
   .hero {
     padding-top: 5rem; }
   .menu {
-    margin-top: 1rem; }
+    margin-top: 1.5rem; }
   .logo {
     display: none; }
     .logo-wrapper {
@@ -1516,5 +1570,7 @@ input::placeholder {
   .swiper-container {
     width: 180px;
     height: 234px; }
+  .swiper-object {
+    height: 120px; }
   .photos__text {
     font-size: 1.1rem; } }
