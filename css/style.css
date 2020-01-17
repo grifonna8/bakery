@@ -1288,7 +1288,9 @@ input::placeholder {
 
 .advantages {
   background: #FFF9E6;
-  padding-bottom: 3rem; }
+  padding-bottom: 4rem; }
+  .advantages__row {
+    margin-top: 1rem; }
   .advantages__fact-wrapper {
     margin-bottom: 1.714rem; }
     .advantages__fact-wrapper--inner {
@@ -1307,15 +1309,17 @@ input::placeholder {
     flex-direction: column;
     min-height: 105px;
     margin-left: 1.214rem;
-    justify-content: space-around;
-    max-width: 25.2rem; }
+    justify-content: space-around; }
   .advantages__fact-text__title {
-    font-weight: 600;
+    font-weight: bold;
     font-size: 1.285rem;
     display: inline-block; }
   .advantages__fact-text__text {
+    font-weight: 300;
+    line-height: 1.5rem;
     font-size: 1.071rem;
-    display: inline-block; }
+    display: inline-block;
+    max-width: 360px; }
 
 .col-50 {
   width: 50%; }
@@ -1334,12 +1338,14 @@ input::placeholder {
   justify-content: center; }
 
 .catalogue {
-  padding-bottom: 1.5rem; }
+  padding-bottom: 2.5rem; }
   .catalogue__wrapper {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: -2rem;
+    height: 720px; }
 
 .col-30 {
   flex-basis: 30%;
@@ -1375,22 +1381,25 @@ input::placeholder {
   font-weight: 700;
   text-align: center;
   display: block;
-  font-size: 1.285rem; }
+  font-size: 1.285rem;
+  text-transform: uppercase;
+  margin-top: -1.5rem; }
 
 .card__text-text {
+  line-height: 1.5rem;
   font-weight: 300;
   display: block;
   font-size: 1.071rem;
   text-align: center; }
 
 .info {
-  margin-top: 1.285rem;
-  margin-bottom: 0.95rem;
+  margin-top: 1.4rem;
   text-transform: uppercase;
   color: #F64747;
   background: transparent;
   border: 1px solid #F64747;
-  padding: 12px 18px; }
+  padding: 12px 18px;
+  outline: none; }
   .info:hover {
     cursor: pointer;
     color: #FFFFFF;
@@ -1442,7 +1451,7 @@ input::placeholder {
   .offering__section-title {
     color: #FFFFFF; }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1650px) {
   .bg-main-advantages--third {
     display: initial; }
   .bg-main-advantages--first {
@@ -1456,7 +1465,7 @@ input::placeholder {
   .bg-photo--first {
     display: initial; } }
 
-@media screen and (min-width: 1201px) and (max-width: 1499px) {
+@media screen and (min-width: 1201px) and (max-width: 1649px) {
   .bg-main-advantages--first {
     display: initial;
     left: -3rem; }
@@ -1473,7 +1482,9 @@ input::placeholder {
     padding-bottom: 4rem; }
     .main-advantages__player-wrapper {
       -webkit-box-pack: center;
-      justify-content: center; } }
+      justify-content: center; }
+  .advantages__fact-text__text {
+    max-width: 300px; } }
 
 @media screen and (max-width: 1100px) {
   html {
@@ -1521,7 +1532,17 @@ input::placeholder {
       padding-bottom: 1rem;
       padding-top: 1rem; }
   .swiper-navigation-wrapper {
-    display: none; } }
+    display: none; }
+  .col-50 {
+    width: 100%; }
+    .col-50--left {
+      margin-right: 0; }
+  .advantages__row {
+    -webkit-box-align: start;
+    align-items: flex-start; }
+  .advantages__fact-wrapper--inner {
+    -webkit-box-pack: center;
+    justify-content: center; } }
 
 @media screen and (max-width: 768px) {
   .hero__image__bread {

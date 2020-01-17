@@ -1,4 +1,4 @@
-@media screen and ( min-width: 1500px )
+@media screen and ( min-width: 1650px )
   .bg-main-advantages
     &--third
       display: initial
@@ -18,7 +18,7 @@
     &--first
       display: initial
 
-@media screen and ( min-width: 1201px ) and ( max-width: 1499px )
+@media screen and ( min-width: 1201px ) and ( max-width: 1649px )
   .bg-main-advantages
     &--first
       display: initial
@@ -36,6 +36,10 @@
     padding-bottom: 4rem
     &__player-wrapper
       justify-content: center
+  .advantages
+    &__fact-text
+        &__text
+          max-width: 300px
 
 @media screen and ( max-width: 1100px )
   html
@@ -96,6 +100,16 @@
     &-navigation
       &-wrapper
         display: none
+  .col-50
+    width: 100%
+    &--left
+      margin-right: 0
+  .advantages
+    &__row
+      align-items: flex-start
+    &__fact-wrapper
+      &--inner
+        justify-content: center
 
 @media screen and ( max-width: 768px )
   .hero
