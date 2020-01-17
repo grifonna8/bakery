@@ -10,7 +10,8 @@ $(document).ready(function () {
     form.toggleClass('modal--visible');
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('#swiper-container', {
+    noSwiping:true,
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -21,9 +22,15 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      991: {
+        noSwiping:false,
+      }
+    },
   });
 
   var mySwiper1 = new Swiper ('#swiper-container-about', {
+    noSwiping:true,
     loop:true,
     pagination: {
       el: '.swiper-pagination-about',
@@ -33,6 +40,11 @@ $(document).ready(function () {
     navigation: {
       nextEl: '.swiper-button-next-about',
       prevEl: '.swiper-button-prev-about',
+    },
+    breakpoints: {
+      991: {
+        noSwiping:false,
+      }
     },
   });
 

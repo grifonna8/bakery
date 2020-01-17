@@ -100,6 +100,8 @@
     &-navigation
       &-wrapper
         display: none
+        &-about
+          display: none
   .col-50
     width: 100%
     &--left
@@ -110,6 +112,9 @@
     &__fact-wrapper
       &--inner
         justify-content: center
+  .about
+    background: $main
+    padding-bottom: 3rem
 
 @media screen and ( max-width: 768px )
   .hero
@@ -132,9 +137,8 @@
       font-size: 1rem
     &__button
       font-size: 0.7rem
-  // #player
-  //   width: 521px
-  //   height: 249px
+  .about
+    display: none
 
 
 @media screen and ( max-width: 576px )
