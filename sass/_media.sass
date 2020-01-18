@@ -50,6 +50,10 @@
         margin-left: 20rem
   .col-40
     width: 32%
+  .photos-line
+    &__image
+      width: 291px
+      height: 170px
   // .hero
   //     &__fact-wrapper
   //       background: none
@@ -115,6 +119,14 @@
   .about
     background: $main
     padding-bottom: 3rem
+  .offering  
+    &__input-group-wrapper
+      flex-direction: column
+      width: initial
+  .photos-line
+    &__image
+      width: 251px
+      height: 130px
 
 @media screen and ( max-width: 768px )
   .hero
@@ -139,6 +151,20 @@
       font-size: 0.7rem
   .about
     display: none
+  .catalogue
+    padding-bottom: 71rem
+    &__wrapper
+      flex-direction: column
+  .card
+    &__text
+      &-title
+        font-size: 1.1rem
+      &-text
+        font-size: 0.9rem
+  .photos-line
+    &__image
+      width: 201px
+      height: 100px
 
 
 @media screen and ( max-width: 576px )
@@ -160,9 +186,33 @@
     &__subtitle
       width: 30rem
       text-align: center
-      
+  .catalogue
+    padding-bottom: 79rem
+  .card
+    &__text
+      &-title
+        font-size: 1rem
+      &-text
+        max-width: 350px
+        font-size: 0.7rem
+  .photos-line
+    &__image
+      width: 150px
+      height: 60px
+
 
 @media screen and ( min-width: 320px ) and ( max-width: 575px )
+  .menu
+    &__text
+      &--upper
+        font-size: 1.25rem
+      &--downer
+        font-size: 0.6rem
+  .contacts
+    &__phone
+      font-size: 0.6rem
+    &__button
+      font-size: 0.4rem
   .hero
     &__title
       font-size: 1.7rem

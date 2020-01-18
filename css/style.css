@@ -575,16 +575,13 @@ input::placeholder {
   .offering__input::placeholder {
     color: black; }
 
-.input-group-wrapper {
+.offering__input-group-wrapper {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   width: 56.22rem;
   margin-bottom: 1.285rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
   -webkit-box-align: center;
   align-items: center; }
 
@@ -1373,6 +1370,10 @@ input::placeholder {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center; }
+  .card__image--upper {
+    height: 177px; }
+  .card__image--downer {
+    height: 156px; }
 
 .card__item {
   display: -webkit-box;
@@ -1461,6 +1462,111 @@ input::placeholder {
   .offering__section-title {
     color: #FFFFFF; }
 
+.photos-line {
+  background-color: #252323; }
+  .photos-line-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .photos-line__row {
+    display: -webkit-box;
+    display: flex; }
+  .photos-line__image {
+    overflow-x: hidden;
+    width: 321px;
+    height: 200px;
+    opacity: 0.2; }
+    .photos-line__image:hover {
+      opacity: 1;
+      cursor: pointer; }
+
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/map/yandex-before-load-marker.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2); }
+
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 563px;
+  cursor: pointer;
+  background-color: transparent; }
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  -webkit-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55); }
+
+.loader:after {
+  box-sizing: border-box; }
+
+.loader:before {
+  box-sizing: border-box; }
+
+.loader.is-active {
+  top: 0;
+  opacity: 1; }
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
 @media screen and (min-width: 1650px) {
   .bg-main-advantages--third {
     display: initial; }
@@ -1502,7 +1608,10 @@ input::placeholder {
   .swiper-navigation-wrapper {
     margin-left: 20rem; }
   .col-40 {
-    width: 32%; } }
+    width: 32%; }
+  .photos-line__image {
+    width: 291px;
+    height: 170px; } }
 
 @media screen and (max-width: 991px) {
   .container {
@@ -1557,7 +1666,15 @@ input::placeholder {
     justify-content: center; }
   .about {
     background: #FFF9E6;
-    padding-bottom: 3rem; } }
+    padding-bottom: 3rem; }
+  .offering__input-group-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: initial; }
+  .photos-line__image {
+    width: 251px;
+    height: 130px; } }
 
 @media screen and (max-width: 768px) {
   .hero__image__bread {
@@ -1578,7 +1695,20 @@ input::placeholder {
   .contacts__button {
     font-size: 0.7rem; }
   .about {
-    display: none; } }
+    display: none; }
+  .catalogue {
+    padding-bottom: 71rem; }
+    .catalogue__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column; }
+  .card__text-title {
+    font-size: 1.1rem; }
+  .card__text-text {
+    font-size: 0.9rem; }
+  .photos-line__image {
+    width: 201px;
+    height: 100px; } }
 
 @media screen and (max-width: 576px) {
   .header {
@@ -1597,9 +1727,27 @@ input::placeholder {
     font-size: 2.3rem; }
   .hero__subtitle {
     width: 30rem;
-    text-align: center; } }
+    text-align: center; }
+  .catalogue {
+    padding-bottom: 79rem; }
+  .card__text-title {
+    font-size: 1rem; }
+  .card__text-text {
+    max-width: 350px;
+    font-size: 0.7rem; }
+  .photos-line__image {
+    width: 150px;
+    height: 60px; } }
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
+  .menu__text--upper {
+    font-size: 1.25rem; }
+  .menu__text--downer {
+    font-size: 0.6rem; }
+  .contacts__phone {
+    font-size: 0.6rem; }
+  .contacts__button {
+    font-size: 0.4rem; }
   .hero__title {
     font-size: 1.7rem; }
   .hero__subtitle {

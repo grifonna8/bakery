@@ -13,8 +13,11 @@
   <link rel="stylesheet" href="css/slick.css"/>
   <link rel="stylesheet" href="css/slick-theme.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://vk.com/js/api/openapi.js?165"></script>
 </head>
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0"></script>
   <header class="header">
     <div class="container">
       <div class="menu">
@@ -315,7 +318,7 @@
         <div class="catalogue__wrapper">
           <div class="col-30">
             <div class="card__item">
-              <div class="card__image">
+              <div class="card__image card__image--upper">
                 <img src="img/catalogue/item-1.png" alt="">
               </div>
               <div class="card__text-wrapper">
@@ -327,7 +330,7 @@
             <!-- /.card__item -->
 
             <div class="card__item">
-              <div class="card__image">
+              <div class="card__image card__image--downer">
                 <img src="img/catalogue/item-4.png" alt="">
               </div>
               <div class="card__text-wrapper">
@@ -341,7 +344,7 @@
           <!-- /.col-30 -->
           <div class="col-30">
             <div class="card__item">
-              <div class="card__image">
+              <div class="card__image card__image--upper">
                 <img src="img/catalogue/item-2.png" alt="">
               </div>
               <div class="card__text-wrapper">
@@ -353,7 +356,7 @@
             <!-- /.card__item -->
 
             <div class="card__item">
-              <div class="card__image">
+              <div class="card__image card__image--downer">
                 <img src="img/catalogue/item-5-1.png" alt="">
               </div>
               <div class="card__text-wrapper">
@@ -367,7 +370,7 @@
           <!-- /.col-30 -->
           <div class="col-30">
             <div class="card__item">
-              <div class="card__image">
+              <div class="card__image card__image--upper">
                 <img src="img/catalogue/item-3.png" alt="">
               </div>
               <div class="card__text-wrapper">
@@ -379,7 +382,7 @@
             <!-- /.card__item -->
 
             <div class="card__item">
-              <div class="card__image">
+              <div class="card__image card__image--downer">
                 <img src="img/catalogue/item-6.png" alt="">
               </div>
               <div class="card__text-wrapper">
@@ -526,6 +529,34 @@
     </section>
     <!-- /.offering -->
 
+    <div class="photos-line">
+        <div class="photos-line-wrapper">
+          <div class="photos-line__row">
+            <img src="img/photos-line/photos-line-1.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-2.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-1.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-2.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-1.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-2.png" alt="" class="photos-line__image">
+          </div>
+          <div class="photos-line__row">
+            <img src="img/photos-line/photos-line-2.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-1.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-2.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-1.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-2.png" alt="" class="photos-line__image">
+            <img src="img/photos-line/photos-line-1.png" alt="" class="photos-line__image">
+          </div>
+        </div>
+        <!-- /.photos-wrapper -->
+    </div>
+    <!-- /.photos-line -->
+
+    <div class="ymap-container">
+      <div class="loader loader-default"></div>
+      <div id="map-yandex"></div>
+    </div><!-- .ymap-container -->
+
     <div class="modal">
       <div class="modal__dialogue">
         <button class="modal__close"></button>
@@ -565,11 +596,35 @@
     </div>
     <!-- /.form -->
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-text__wrapper">
+        <h2 class="footer-text__text">© 1994-2014 Glo academy ,  ИНН: 7708757552, ОГРН: 1127746150080,</h2>
+        <h2 class="footer-text__text">Адрес: г. Москва, ул. Неверовского, д. 9</h2>
+      </div>
+      <!-- /.footer-text__wrapper-->
+      <div class="footer-social-likes">
+        <div id="vk_like"></div>
+          <script>VK.Widgets.Like("vk_like", {type: "button"});</script>
+          <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100001305114667" data-width="120" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+      </div>
+      <!-- /.footer-social-likes -->
+    </div>
+    <!-- /.container -->
+  </footer>
+<!-- /.footer -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/swiper.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=48709629-0610-48b9-b2c8-df1f479db786&lang=ru_RU">
+</script>
+
 <script src="js/jwplayer.js"></script>
 <script src="js/main.js"></script>
+<script>
+  VK.init({apiId: 44186315, onlyWidgets: true});
+</script>
 </body>
 </html>
