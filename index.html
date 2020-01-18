@@ -13,11 +13,20 @@
   <link rel="stylesheet" href="css/slick.css"/>
   <link rel="stylesheet" href="css/slick-theme.css"/>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://vk.com/js/api/openapi.js?165"></script>
+  <script src="https://vk.com/js/api/openapi.js?7286577"></script>
+  <script>
+    VK.init({apiId: 7286577, onlyWidgets: true});
+  </script>
 </head>
 <body>
   <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0"></script>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=100001305114667";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <header class="header">
     <div class="container">
       <div class="menu">
@@ -600,14 +609,14 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-text__wrapper">
-        <h2 class="footer-text__text">© 1994-2014 Glo academy ,  ИНН: 7708757552, ОГРН: 1127746150080,</h2>
-        <h2 class="footer-text__text">Адрес: г. Москва, ул. Неверовского, д. 9</h2>
+        <h2 class="footer-text__text footer-text__text--info">© 1994-2014 Glo academy ,  ИНН: 7708757552, ОГРН:&nbsp;1127746150080,</h2>
+        <h2 class="footer-text__text footer-text__text-address">Адрес: г. Москва, ул. Неверовского, д. 9</h2>
       </div>
       <!-- /.footer-text__wrapper-->
       <div class="footer-social-likes">
         <div id="vk_like"></div>
           <script>VK.Widgets.Like("vk_like", {type: "button"});</script>
-          <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100001305114667" data-width="120" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+          <div data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
       </div>
       <!-- /.footer-social-likes -->
     </div>
@@ -622,9 +631,9 @@
 </script>
 
 <script src="js/jwplayer.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-  VK.init({apiId: 44186315, onlyWidgets: true});
-</script>
+
 </body>
 </html>
