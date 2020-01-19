@@ -58,11 +58,17 @@ input::placeholder
     flex-direction: column
     &__button
       margin-top: 1rem
+      outline: none
+      &:hover
+        -webkit-box-shadow: 0 5px 15px rgba(16, 233, 198, 0.7)
+        -moz-box-shadow: 0 5px 15px rgba(16, 233, 198, 0.7)
+        box-shadow: 0 5px 15px rgba(16, 233, 198, 0.7)
+        transition: box-shadow .2s
     &__dialogue
       background-color: $red
       max-width: 21.4rem
       max-height: 26.6rem
-      border: 5px solid $main-up
+      border: 5px solid #fdf1cf
     &__wrapper
       top: 0
       bottom: 0
@@ -81,6 +87,7 @@ input::placeholder
         font-size: 1.285rem
     &__input-group
       position: relative
+      outline: none
 
 .offering
   &__dialogue
@@ -119,5 +126,88 @@ input::placeholder
     align-items: center
 
 #hero-user-name-error
-  color: red
-  margin-top: 1rem
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+#hero-user-phone-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+#hero-user-email-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+
+#modal-user-name-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+#modal-user-phone-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+#modal-user-email-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+
+#offering-user-name-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+  font-size: 0.9rem
+#offering-user-phone-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+  font-size: 0.9rem
+#offering-user-email-error
+  position: absolute
+  font-weight: bold
+  bottom: -12px
+  background: yellow
+  padding-top: 3px
+  padding-bottom: 3px
+  color: #ee1212
+  z-index: 1
+  font-size: 0.9rem

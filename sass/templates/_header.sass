@@ -62,8 +62,14 @@
   &__button
     margin: 0
     font-size: 1rem
-    font-weight: bold
+    font-weight: 300
     cursor: pointer
+    outline: none
+    &:hover
+      -webkit-box-shadow: 0 5px 15px rgba(234, 53, 62, 0.3)
+      -moz-box-shadow: 0 5px 15px rgba(234, 53, 62, 0.3)
+      box-shadow: 0 5px 15px rgba(234, 53, 62, 0.3)
+      transition: box-shadow .2s
 .call-back
   display: flex
   justify-content: flex-start

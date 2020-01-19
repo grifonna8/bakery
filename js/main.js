@@ -10,6 +10,72 @@ $(document).ready(function () {
     form.toggleClass('modal--visible');
   });
 
+  var form1 = $('.info-modal--bread'),
+      formBtn1 = $('[data-toggle="info-modal--bread"]'),
+      closeBtn1 = $('.info-modal--bread__close');
+  
+  formBtn1.on('click', function () {
+    form1.toggleClass('info-modal--bread--visible');    
+  });
+  closeBtn1.on('click', function () {
+    form1.toggleClass('info-modal--bread--visible');
+  });
+
+  var form2 = $('.info-modal--bread-small'),
+      formBtn2 = $('[data-toggle="info-modal--bread-small"]'),
+      closeBtn2 = $('.info-modal--bread-small__close');
+  
+  formBtn2.on('click', function () {
+    form2.toggleClass('info-modal--bread-small--visible');    
+  });
+  closeBtn2.on('click', function () {
+    form2.toggleClass('info-modal--bread-small--visible');
+  });
+
+  var form3 = $('.info-modal--buns'),
+  formBtn3 = $('[data-toggle="info-modal--buns"]'),
+  closeBtn3 = $('.info-modal--buns__close');
+
+  formBtn3.on('click', function () {
+  form3.toggleClass('info-modal--buns--visible');    
+  });
+  closeBtn3.on('click', function () {
+  form3.toggleClass('info-modal--buns--visible');
+  });
+
+  var form4 = $('.info-modal--confectionery'),
+  formBtn4 = $('[data-toggle="info-modal--confectionery"]'),
+  closeBtn4 = $('.info-modal--confectionery__close');
+
+  formBtn4.on('click', function () {
+  form4.toggleClass('info-modal--confectionery--visible');    
+  });
+  closeBtn4.on('click', function () {
+  form4.toggleClass('info-modal--confectionery--visible');
+  });
+
+  var form5 = $('.info-modal--crispbreads'),
+  formBtn5 = $('[data-toggle="info-modal--crispbreads"]'),
+  closeBtn5 = $('.info-modal--crispbreads__close');
+
+  formBtn5.on('click', function () {
+  form5.toggleClass('info-modal--crispbreads--visible');    
+  });
+  closeBtn5.on('click', function () {
+  form5.toggleClass('info-modal--crispbreads--visible');
+  });
+
+  var form6 = $('.info-modal--muesli'),
+  formBtn6 = $('[data-toggle="info-modal--muesli"]'),
+  closeBtn6 = $('.info-modal--muesli__close');
+
+  formBtn6.on('click', function () {
+  form6.toggleClass('info-modal--muesli--visible');    
+  });
+  closeBtn6.on('click', function () {
+  form6.toggleClass('info-modal--muesli--visible');
+  });
+
   var mySwiper = new Swiper ('#swiper-container', {
     noSwiping:true,
     loop: true,
@@ -22,11 +88,11 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
-      991: {
-        noSwiping:false,
-      }
-    },
+    // breakpoints: {
+    //   991: {
+    //     noSwiping:false,
+    //   }
+    // },
   });
 
   var mySwiper1 = new Swiper ('#swiper-container-about', {

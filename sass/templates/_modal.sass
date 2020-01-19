@@ -37,6 +37,11 @@ input::placeholder
     margin: 5px
     cursor: pointer
     outline: none
+    &:hover
+      -webkit-box-shadow: 0 5px 15px rgba(241, 238, 40, 0.925)
+      -moz-box-shadow: 0 5px 15px rgba(241, 238, 40, 0.925)
+      box-shadow: 0 5px 15px rgba(241, 238, 40, 0.925)
+      transition: box-shadow .2s
   &--visible
     display: flex
     visibility: visible
@@ -72,8 +77,15 @@ input::placeholder
     flex-direction: column
     &__input-group
       position: relative
+      outline: none
     &__button
       margin-top: 1rem
+      outline: none
+      &:hover
+        -webkit-box-shadow: 0 5px 15px rgba(16, 233, 198, 0.7)
+        -moz-box-shadow: 0 5px 15px rgba(16, 233, 198, 0.7)
+        box-shadow: 0 5px 15px rgba(16, 233, 198, 0.7)
+        transition: box-shadow .2s
     &__title
       color: $main
       text-transform: uppercase
@@ -84,7 +96,6 @@ input::placeholder
       &--small
         font-size: 1.285rem
     &__wrapper
-
       top: 0
       bottom: 0
       left: 0

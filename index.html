@@ -75,7 +75,7 @@
             <div class="fact-wrapper hero__fact-wrapper hero__fact-wrapper">
               <span class="fact-text hero__fact-text hero__fact-text--last">Уникальная система тройного контроля качества</span>
             </div>
-            <div class="hero__form">
+            <div class="hero--form">
               <img src="img/hero/ear.png" alt="" class="hero__image__ear">
               <div class="hero__form__dialogue">
                 <div class="hero__form__wrapper">
@@ -334,7 +334,7 @@
                 <span class="card__text-title">Хлеб</span>
                 <span class="card__text-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</span>
               </div>
-              <button class="info">Просмотреть</button>
+              <button class="info" data-toggle='info-modal--bread'>Просмотреть</button>
             </div>
             <!-- /.card__item -->
 
@@ -346,7 +346,7 @@
                 <span class="card__text-title">Кондитерские</span>
                 <span class="card__text-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</span>
               </div>
-              <button class="info">Просмотреть</button>
+              <button class="info" data-toggle='info-modal--confectionery'>Просмотреть</button>
             </div>
             <!-- /.card__item -->
           </div>
@@ -360,7 +360,7 @@
                 <span class="card__text-title">Хлебушки</span>
                 <span class="card__text-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</span>
               </div>
-              <button class="info">Просмотреть</button>
+              <button class="info" data-toggle='info-modal--bread-small'>Просмотреть</button>
             </div>
             <!-- /.card__item -->
 
@@ -372,7 +372,7 @@
                 <span class="card__text-title">Хлебцы</span>
                 <span class="card__text-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</span>
               </div>
-              <button class="info">Просмотреть</button>
+              <button class="info" data-toggle='info-modal--crispbreads'>Просмотреть</button>
             </div>
             <!-- /.card__item -->
           </div>
@@ -386,7 +386,7 @@
                 <span class="card__text-title">Булочки</span>
                 <span class="card__text-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</span>
               </div>
-              <button class="info">Просмотреть</button>
+              <button class="info" data-toggle='info-modal--buns'>Просмотреть</button>
             </div>
             <!-- /.card__item -->
 
@@ -398,7 +398,7 @@
                 <span class="card__text-title">Мюсли</span>
                 <span class="card__text-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</span>
               </div>
-              <button class="info">Просмотреть</button>
+              <button class="info" data-toggle='info-modal--muesli'>Просмотреть</button>
             </div>
             <!-- /.card__item -->
           </div>
@@ -600,6 +600,134 @@
           </form>
           <!-- /.form hero__form -->
         </div>
+      </div>
+      <!-- /.form__dialogue -->
+    </div>
+    <!-- /.form -->
+
+    <div class="info-modal--bread">
+      <div class="info-modal--bread__dialogue">
+        <button class="info-modal--bread__close"></button>
+        <div class="info-modal--bread__form__wrapper">
+          <h3 class="info-modal--bread__title">Состав нашего хлеба</h3>
+          <ul>
+            <li>мука хлебопекарная пшеничная в/с</li>
+            <li>вода питьевая</li>
+            <li>сахар-песок</li>
+            <li>маргарин столовый</li>
+            <li>соль поваренная пищевая</li>
+            <li>дрожжи</li>
+          </ul>
+        </div>
+        <!-- /.form__wrapper -->
+      </div>
+      <!-- /.form__dialogue -->
+    </div>
+    <!-- /.form -->
+
+    <div class="info-modal--bread-small">
+      <div class="info-modal--bread-small__dialogue">
+        <button class="info-modal--bread-small__close"></button>
+        <div class="info-modal--bread-small__form__wrapper">
+          <h3 class="info-modal--bread-small__title">Состав наших хлебушков</h3>
+          <ul>
+            <li>мука хлебопекарная пшеничная в/с</li>
+            <li>вода питьевая</li>
+            <li>сахар-песок</li>
+            <li>маргарин столовый</li>
+            <li>соль поваренная пищевая</li>
+            <li>дрожжи</li>
+          </ul>
+        </div>
+        <!-- /.form__wrapper -->
+      </div>
+      <!-- /.form__dialogue -->
+    </div>
+    <!-- /.form -->
+
+    <div class="info-modal--buns">
+      <div class="info-modal--buns__dialogue">
+        <button class="info-modal--buns__close"></button>
+        <div class="info-modal--buns__form__wrapper">
+          <h3 class="info-modal--buns__title">Состав наших булочек</h3>
+          <ul>
+            <li>мука хлебопекарная пшеничная в/с</li>
+            <li>вода питьевая</li>
+            <li>сахар белый</li>
+            <li>маргарин</li>
+            <li>яйцо куриное</li>
+            <li>дрожжи</li>
+            <li>молоко сухое обезжиренное</li>
+            <li>соль поваренная пищевая</li>
+            <li>ванилин</li>
+          </ul>
+        </div>
+        <!-- /.form__wrapper -->
+      </div>
+      <!-- /.form__dialogue -->
+    </div>
+    <!-- /.form -->
+
+    <div class="info-modal--confectionery">
+      <div class="info-modal--confectionery__dialogue">
+        <button class="info-modal--confectionery__close"></button>
+        <div class="info-modal--confectionery__form__wrapper">
+          <h3 class="info-modal--confectionery__title">Состав наших кондитерских изделий</h3>
+          <ul>
+            <li>мука хлебопекарная пшеничная в/с</li>
+            <li>яйцо куриное</li>
+            <li>маргарин</li>
+            <li>соль</li>
+            <li>масло сливочное</li>
+            <li>молоко сгущенное вареное</li>
+            <li>какао порошок</li>
+            <li>крем заварной</li>
+            <li>молоко пастеризованное</li>
+            <li>шоколадная глазурь темная</li>
+          </ul>
+        </div>
+        <!-- /.form__wrapper -->
+      </div>
+      <!-- /.form__dialogue -->
+    </div>
+    <!-- /.form -->
+
+    <div class="info-modal--crispbreads">
+      <div class="info-modal--crispbreads__dialogue">
+        <button class="info-modal--crispbreads__close"></button>
+        <div class="info-modal--crispbreads__form__wrapper">
+          <h3 class="info-modal--crispbreads__title">Состав наших хлебцев</h3>
+          <ul>
+            <li>пшеница</li>
+            <li>крупа гречневая ядрица</li>
+            <li>крупа рисовая</li>
+            <li>крупа пшено</li>
+            <li>крупа кукурузная</li>
+            <li>крупа овсяная</li>
+            <li>крупа перловая</li>
+          </ul>
+        </div>
+        <!-- /.form__wrapper -->
+      </div>
+      <!-- /.form__dialogue -->
+    </div>
+    <!-- /.form -->
+
+    <div class="info-modal--muesli">
+      <div class="info-modal--muesli__dialogue">
+        <button class="info-modal--muesli__close"></button>
+        <div class="info-modal--muesli__form__wrapper">
+          <h3 class="info-modal--muesli__title">Состав наших мюсли</h3>
+          <ul>
+            <li>хлопья 4-ч зерновых культур (овсянные, ячменные, пшеничные, ржаные)</li>
+            <li>ананас (цукаты)</li>
+            <li>хлопья кукурузные глазированные</li>
+            <li>виноград сушеный</li>
+            <li>бананы сушеные</li>
+            <li>ядра семян подсолнечника</li>
+          </ul>
+        </div>
+        <!-- /.form__wrapper -->
       </div>
       <!-- /.form__dialogue -->
     </div>
