@@ -148,61 +148,61 @@ $(document).ready(function () {
   //   });
   // });
 
-  jwplayer("player").setup({
-  image:"img/main-advantages/preload.jpg",
-  file:"http://grifonna8.ru/video/video.mp4",
-  width:"621",
-  height:"349",
-  controls:true,
-  autostart:false,
-  mute:false,
-  stretching:"uniform",
-  });
+  // jwplayer("player").setup({
+  // image:"img/main-advantages/preload.jpg",
+  // file:"http://grifonna8.ru/video/video.mp4",
+  // width:"621",
+  // height:"349",
+  // controls:true,
+  // autostart:false,
+  // mute:false,
+  // stretching:"uniform",
+  // });
 
-  jwplayer("player--first").setup({
-  image:"img/about/preload.jpg",
-  file:"http://grifonna8.ru/video/video.mp4",
-  controls:true,
-  autostart:false,
-  mute:false,
-  stretching:"uniform",
-  });
+  // jwplayer("player--first").setup({
+  // image:"img/about/preload.jpg",
+  // file:"http://grifonna8.ru/video/video.mp4",
+  // controls:true,
+  // autostart:false,
+  // mute:false,
+  // stretching:"uniform",
+  // });
 
-  jwplayer("player--second").setup({
-  image:"img/about/preload.jpg",
-  file:"http://grifonna8.ru/video/video2.mp4",
-  controls:true,
-  autostart:false,
-  mute:false,
-  stretching:"uniform",
-  });
+  // jwplayer("player--second").setup({
+  // image:"img/about/preload.jpg",
+  // file:"http://grifonna8.ru/video/video2.mp4",
+  // controls:true,
+  // autostart:false,
+  // mute:false,
+  // stretching:"uniform",
+  // });
 
-  jwplayer("player--third").setup({
-  image:"img/about/preload.jpg",
-  file:"http://grifonna8.ru/video/video3.mp4",
-  controls:true,
-  autostart:false,
-  mute:false,
-  stretching:"uniform",
-  });
+  // jwplayer("player--third").setup({
+  // image:"img/about/preload.jpg",
+  // file:"http://grifonna8.ru/video/video3.mp4",
+  // controls:true,
+  // autostart:false,
+  // mute:false,
+  // stretching:"uniform",
+  // });
   
-  jwplayer("player--fourth").setup({
-  image:"img/about/preload.jpg",
-  file:"http://grifonna8.ru/video/video4.mp4",
-  controls:true,
-  autostart:false,
-  mute:false,
-  stretching:"uniform",
-  });
+  // jwplayer("player--fourth").setup({
+  // image:"img/about/preload.jpg",
+  // file:"http://grifonna8.ru/video/video4.mp4",
+  // controls:true,
+  // autostart:false,
+  // mute:false,
+  // stretching:"uniform",
+  // });
   
-  jwplayer("player--fifth").setup({
-  image:"img/about/preload.jpg",
-  file:"http://grifonna8.ru/video/video5.mp4",
-  controls:true,
-  autostart:false,
-  mute:false,
-  stretching:"uniform",
-  });
+  // jwplayer("player--fifth").setup({
+  // image:"img/about/preload.jpg",
+  // file:"http://grifonna8.ru/video/video5.mp4",
+  // controls:true,
+  // autostart:false,
+  // mute:false,
+  // stretching:"uniform",
+  // });
   
 
   // $('.owl-carousel').owlCarousel({
@@ -408,4 +408,19 @@ $(document).ready(function () {
   /* маска для телефона */
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
 
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '349',
+      width: '100%',
+      videoId: 'e6DTZtT-2zM',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 });

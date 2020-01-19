@@ -195,8 +195,9 @@
           </div>
         </div>
         <!-- /.section-title__wrapper -->
-        <div class="main-advantages__player-wrapper">
-          <div id="player"></div>
+        <div class="main-advantages__player-wrapper" id="player">
+          <script src="https://www.youtube.com/iframe_api"></script>
+          <img src="img/main-advantages/play.png" alt="" class="video__play">
         </div>
         <!-- /.main-advantages__player-wrapper -->
       </div>
@@ -445,20 +446,27 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide" data-swiper-slide-index="0">
-                    <div id="player--first"></div>
+                  <div class="swiper-slide">
+                    <!-- <div id="player--first"></div> -->
+                    <div class="youtube" id="jHeTxdrGzTU" style="width: 100%; height: 250px;"></div>
+
                   </div>
-                  <div class="swiper-slide" data-swiper-slide-index="1">
-                    <div id="player--second"></div>
+                  <div class="swiper-slide">
+                    <!-- <div id="player--second"></div> -->
+                    <div class="youtube" id="1eM2b4Gl7bg" style="width: 100%; height: 250px;"></div>
+
                   </div>
-                  <div class="swiper-slide" data-swiper-slide-index="2">
-                    <div id="player--third"></div>
+                  <div class="swiper-slide">
+                    <!-- <div id="player--third"></div> -->
+                    <div class="youtube" id="-JTqGw2EycM" style="width: 100%; height: 250px;"></div>
                   </div>
-                  <div class="swiper-slide" data-swiper-slide-index="3">
-                    <div id="player--fourth"></div>
+                  <div class="swiper-slide">
+                    <!-- <div id="player--fourth"></div> -->
+                    <div class="youtube" id="NW_TWIxpLJg" style="width: 100%; height: 250px;"></div>
                   </div>
-                  <div class="swiper-slide" data-swiper-slide-index="4">
-                    <div id="player--fifth"></div>
+                  <div class="swiper-slide">
+                    <!-- <div id="player--fifth"></div> -->
+                    <div class="youtube" id="0wCC3aLXdOw" style="width: 100%; height: 250px;"></div>
                   </div>
               </div>
             </div>
@@ -747,10 +755,48 @@
 <script src="js/swiper.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=48709629-0610-48b9-b2c8-df1f479db786&lang=ru_RU">
 </script>
-
-<script src="js/jwplayer.js"></script>
+<!-- <script src="js/jwplayer.js"></script> -->
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
+<script>function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+    r(function(){
+      if (!document.getElementsByClassName) {
+          // Поддержка IE8
+          var getElementsByClassName = function(node, classname) {
+              var a = [];
+              var re = new RegExp('(^| )'+classname+'( |$)');
+              var els = node.getElementsByTagName("*");
+              for(var i=0,j=els.length; i < j; i++)
+                  if(re.test(els[i].className))a.push(els[i]);
+              return a;
+          }
+          var videos = getElementsByClassName(document.body,"youtube");
+      } else {
+          var videos = document.getElementsByClassName("youtube");
+      }
+      var nb_videos = videos.length;
+      for (var i=0; i < nb_videos; i++) {
+          // Находим постер для видео, зная ID нашего видео
+          videos[i].style.backgroundImage = 'url(../img/about/preload.jpg)';
+          // Размещаем над постером кнопку Play, чтобы создать эффект плеера
+          var play = document.createElement("div");
+          play.setAttribute("class","play");
+          videos[i].appendChild(play);
+          videos[i].onclick = function() {
+              // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
+              var iframe = document.createElement("iframe");
+              var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+              if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
+              iframe.setAttribute("src",iframe_url);
+              iframe.setAttribute("frameborder",'0');
+              // Высота и ширина iFrame будет как у элемента-родителя
+              iframe.style.width  = this.style.width;
+              iframe.style.height = this.style.height;
+              // Заменяем начальное изображение (постер) на iFrame
+              this.parentNode.replaceChild(iframe, this);
+          }
+      }
+    });</script>
 <script src="js/main.js"></script>
 
 </body>

@@ -687,7 +687,8 @@ input::placeholder {
 
 #player {
   border: 5px solid white;
-  border-radius: 12px; }
+  border-radius: 12px;
+  margin-left: auto; }
 
 #player .jwdisplay:hover #player_display_button_play {
   background: url("../img/main-advantages/play.png") center no-repeat !important;
@@ -1357,6 +1358,9 @@ input::placeholder {
   background-color: #FFFFFF;
   opacity: 1;
   border-radius: 0px; }
+  .swiper-pagination-bullets {
+    bottom: 2px;
+    left: 20px; }
   .swiper-pagination-bullet-active {
     background-color: #F64747;
     outline: none; }
@@ -1396,10 +1400,28 @@ input::placeholder {
 .main-advantages {
   padding-bottom: 9rem; }
   .main-advantages__player-wrapper {
+    position: relative;
     display: -webkit-box;
     display: flex;
-    -webkit-box-pack: end;
-    justify-content: flex-end; }
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 44.357rem;
+    min-height: 24.928rem;
+    z-index: 1;
+    background: url("../img/main-advantages/preload.jpg") center no-repeat; }
+    .main-advantages__player-wrapper::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2; }
+
+.video__play {
+  z-index: 3;
+  cursor: pointer; }
 
 .bg-main-advantages--first {
   display: none;
@@ -1948,6 +1970,36 @@ input::placeholder {
   -webkit-transform: translateX -45%;
   transform: translateX -45%; }
 
+.youtube {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  width: 419px;
+  height: 250px; }
+  .youtube::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px; }
+
+.play {
+  background: url("../img/main-advantages/play.png") no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  height: 89px;
+  width: 43px;
+  -webkit-transition: none;
+  transition: none;
+  left: 45%;
+  top: 35%;
+  -webkit-transform: translate -45%, -35%;
+  transform: translate -45%, -35%; }
+
 .offering {
   padding-bottom: 1rem;
   background: url("../img/offering/bg-offering.png") center no-repeat #FFF9E6;
@@ -2134,7 +2186,7 @@ input::placeholder {
     -webkit-box-align: center;
     align-items: center; }
   #player {
-    margin: 0; }
+    margin: auto; }
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
