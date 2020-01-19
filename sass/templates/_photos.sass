@@ -25,6 +25,8 @@
   width: 566px
   height: 334px
 .swiper
+  &-object
+    position: relative
   &-navigation
     &-wrapper
       position: absolute
@@ -35,9 +37,12 @@
       border-radius: 3px
       width: 100px
       height: 20px
-      margin-left: 17.5rem
-      bottom: 5.5rem
+      // margin-left: 17.5rem
+      // bottom: 5.5rem
       z-index: 11
+      left: 40%
+      bottom: 1.5rem
+      transform: translateX (-40%)
   &-pagination
     &-bullet
       margin-right: 5px

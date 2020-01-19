@@ -44,10 +44,6 @@
 @media screen and ( max-width: 1100px )
   html
     font-size: 12px
-  .swiper
-    &-navigation
-      &-wrapper
-        margin-left: 20rem
   .col-40
     width: 32%
   .photos-line
@@ -100,14 +96,12 @@
         margin: 0
         padding-bottom: 1rem
         padding-top: 1rem
-  .swiper
-    &-navigation
-      &-wrapper
-        display: none
-        &-about
-          display: none
-
-      
+  // .swiper
+  //   &-navigation
+  //     &-wrapper
+  //       display: none
+  //       &-about
+  //         display: none
   .col-50
     width: 100%
     &--left
@@ -143,18 +137,16 @@
     &__content
       margin-top: 0
       margin-bottom: 2rem
-  .swiper-container
+  #swiper-container
     width: 466px
-    height: 234px
+    height: 284px
   .contacts
     &__figures
       font-size: 1rem
     &__button
       font-size: 0.7rem
-  .about
-    display: none
   .catalogue
-    padding-bottom: 71rem
+    padding-bottom: 74rem
     &__wrapper
       flex-direction: column
   .card
@@ -197,7 +189,7 @@
       width: 30rem
       text-align: center
   .catalogue
-    padding-bottom: 79rem
+    padding-bottom: 83rem
   .card
     &__text
       &-title
@@ -209,7 +201,12 @@
     &__image
       width: 150px
       height: 60px
-
+  .swiper
+    &-navigation
+      &-wrapper
+        bottom: 8.5rem
+        left: 20%
+        transform: translateX (-20%)
 
 @media screen and ( min-width: 320px ) and ( max-width: 575px )
   .menu
@@ -229,11 +226,35 @@
     &__subtitle
       width: 20rem
       text-align: center
-  .swiper
+  #swiper
     &-container
       width: 180px
       height: 234px
-    &-object
+      &-about
+        width: 250px
+        height: 270px
+  #player--first
+    width: 250px !important
+    height: 270px !important
+  #player--second
+    width: 250px !important
+    height: 270px !important
+    #player--third
+    width: 250px !important
+    height: 270px !important
+    #player--fourth
+    width: 250px !important
+    height: 270px !important
+    #player--fifth
+    width: 250px !important
+    height: 270px !important
+  .swiper
+    &-navigation
+      &-wrapper
+        &-about
+          left: 40%
+          transform: translateX (-40%)
+  .swiper-object
       height: 120px         
   .photos
     &__text
