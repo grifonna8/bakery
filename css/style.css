@@ -4,7 +4,8 @@
   src: url("../fonts/fontello/fontello.eot?3900645");
   src: url("../fonts/fontello/fontello.eot?3900645#iefix") format("embedded-opentype"), url("../fonts/fontello/fontello.woff2?3900645") format("woff2"), url("../fonts/fontello/fontello.woff?3900645") format("woff"), url("../fonts/fontello/fontello.ttf?3900645") format("truetype"), url("../fonts/fontello/fontello.svg?3900645#fontello") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -1108,7 +1109,7 @@ input::placeholder {
     max-width: 44.357rem;
     min-height: 24.928rem;
     z-index: 1;
-    background: url("../img/main-advantages/preload.webp") center no-repeat; }
+    background: url("../img/main-advantages/preload.jpg") center no-repeat; }
     .main-advantages__player-wrapper::before {
       position: absolute;
       content: '';
@@ -1625,7 +1626,7 @@ input::placeholder {
 
 .about {
   padding-bottom: 5.5rem;
-  background: url("../img/about/bg-about.webp") no-repeat center 320px #FFF9E6; }
+  background: url("../img/about/bg-about.png") no-repeat center 320px #FFF9E6; }
   .about__wrapper__text {
     margin-bottom: 2rem; }
   .about__slider__wrapper {
@@ -1729,7 +1730,7 @@ input::placeholder {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: url("../img/map/yandex-before-load-marker.webp") no-repeat;
+  background: url("../img/map/yandex-before-load-marker.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2); }
