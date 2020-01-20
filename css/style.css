@@ -689,312 +689,7 @@ input::placeholder {
   border: 5px solid white;
   border-radius: 12px;
   margin-left: auto; }
-
-#player .jwdisplay:hover #player_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px;
-  cursor: pointer; }
-
-#player_display_button #player_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px; }
-
-#player .jwdisplay:hover #player_display_button {
-  background: none !important; }
-
-#player_display_button {
-  background: none !important; }
-
-#player_logo {
-  display: none !important; }
-
-#player_controlbar .jwplay button:hover {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player_controlbar .jwplay button {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player_controlbar .jwtimeSliderThumb {
-  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
-  width: 19px !important; }
-
-#player_controlbar .jwbackground {
-  background: #273747 !important; }
-
-#player_controlbar .jwcapRight {
-  background: #273747 !important; }
-
-#player_controlbar .jwcapLeft {
-  background: #273747 !important; }
-
-#player_display .jwpreview {
-  border-radius: 8px; }
-  #player_display .jwpreview::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 8px; }
-
-#player--first {
-  width: 419px !important;
-  height: 250px !important;
-  border: 5px solid white;
-  border-radius: 12px; }
-
-#player--first .jwdisplay:hover #player--first_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px;
-  cursor: pointer; }
-
-#player--first_display_button #player--first_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px; }
-
-#player--first .jwdisplay:hover #player--first_display_button {
-  background: none !important; }
-
-#player--first_display_button {
-  background: none !important; }
-
-#player--first_logo {
-  display: none !important; }
-
-#player--first_controlbar .jwplay button:hover {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--first_controlbar .jwplay button {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--first_controlbar .jwtimeSliderThumb {
-  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
-  width: 19px !important; }
-
-#player--first_controlbar .jwbackground {
-  background: #273747 !important; }
-
-#player--first_controlbar .jwcapRight {
-  background: #273747 !important; }
-
-#player--first_controlbar .jwcapLeft {
-  background: #273747 !important; }
-
-#player--first_display .jwpreview {
-  border-radius: 8px; }
-  #player--first_display .jwpreview::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 8px; }
-
-#player--second {
-  border: 5px solid white;
-  border-radius: 12px;
-  width: 419px !important;
-  height: 250px !important; }
-
-#player--second .jwdisplay:hover #player--second_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px;
-  cursor: pointer; }
-
-#player--second_display_button #player--second_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px; }
-
-#player--second .jwdisplay:hover #player--second_display_button {
-  background: none !important; }
-
-#player--second_display_button {
-  background: none !important; }
-
-#player--second_logo {
-  display: none !important; }
-
-#player--second_controlbar .jwplay button:hover {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--second_controlbar .jwplay button {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--second_controlbar .jwtimeSliderThumb {
-  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
-  width: 19px !important; }
-
-#player--second_controlbar .jwbackground {
-  background: #273747 !important; }
-
-#player--second_controlbar .jwcapRight {
-  background: #273747 !important; }
-
-#player--second_controlbar .jwcapLeft {
-  background: #273747 !important; }
-
-#player--second_display .jwpreview {
-  border-radius: 8px; }
-  #player--second_display .jwpreview::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 8px; }
-
-#player--third {
-  border: 5px solid white;
-  border-radius: 12px;
-  width: 419px !important;
-  height: 250px !important; }
-
-#player--third .jwdisplay:hover #player--third_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px;
-  cursor: pointer; }
-
-#player--third_display_button #player--third_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px; }
-
-#player--third .jwdisplay:hover #player--third_display_button {
-  background: none !important; }
-
-#player--third_display_button {
-  background: none !important; }
-
-#player--third_logo {
-  display: none !important; }
-
-#player--third_controlbar .jwplay button:hover {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--third_controlbar .jwplay button {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--third_controlbar .jwtimeSliderThumb {
-  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
-  width: 19px !important; }
-
-#player--third_controlbar .jwbackground {
-  background: #273747 !important; }
-
-#player--third_controlbar .jwcapRight {
-  background: #273747 !important; }
-
-#player--third_controlbar .jwcapLeft {
-  background: #273747 !important; }
-
-#player--third_display .jwpreview {
-  border-radius: 8px; }
-  #player--third_display .jwpreview::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 8px; }
-
-#player--fourth {
-  width: 419px !important;
-  height: 250px !important;
-  border: 5px solid white;
-  border-radius: 12px; }
-
-#player--fourth .jwdisplay:hover #player--fourth_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px;
-  cursor: pointer; }
-
-#player--fourth_display_button #player--fourth_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px; }
-
-#player--fourth .jwdisplay:hover #player--fourth_display_button {
-  background: none !important; }
-
-#player--fourth_display_button {
-  background: none !important; }
-
-#player--fourth_logo {
-  display: none !important; }
-
-#player--fourth_controlbar .jwplay button:hover {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--fourth_controlbar .jwplay button {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--fourth_controlbar .jwtimeSliderThumb {
-  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
-  width: 19px !important; }
-
-#player--fourth_controlbar .jwbackground {
-  background: #273747 !important; }
-
-#player--fourth_controlbar .jwcapRight {
-  background: #273747 !important; }
-
-#player--fourth_controlbar .jwcapLeft {
-  background: #273747 !important; }
-
-#player--fourth_display .jwpreview {
-  border-radius: 8px; }
-  #player--fourth_display .jwpreview::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 8px; }
-
-#player--fifth {
-  width: 419px !important;
-  height: 250px !important;
-  border: 5px solid white;
-  border-radius: 12px; }
-
-#player--fifth .jwdisplay:hover #player--fifth_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px;
-  cursor: pointer; }
-
-#player--fifth_display_button #player--fifth_display_button_play {
-  background: url("../img/main-advantages/play.png") center no-repeat !important;
-  height: 80px; }
-
-#player--fifth .jwdisplay:hover #player--fifth_display_button {
-  background: none !important; }
-
-#player--fifth_display_button {
-  background: none !important; }
-
-#player--fifth_logo {
-  display: none !important; }
-
-#player--fifth_controlbar .jwplay button:hover {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--fifth_controlbar .jwplay button {
-  background: url("../img/main-advantages/play-small.png") center no-repeat !important; }
-
-#player--fifth_controlbar .jwtimeSliderThumb {
-  background: url("../img/main-advantages/time-dot.png") center no-repeat !important;
-  width: 19px !important; }
-
-#player--fifth_controlbar .jwbackground {
-  background: #273747 !important; }
-
-#player--fifth_controlbar .jwcapRight {
-  background: #273747 !important; }
-
-#player--fifth_controlbar .jwcapLeft {
-  background: #273747 !important; }
-
-#player--fifth_display .jwpreview {
-  border-radius: 8px; }
-  #player--fifth_display .jwpreview::before {
+  #player::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -1093,6 +788,9 @@ input::placeholder {
   display: flex;
   -webkit-box-pack: start;
   justify-content: flex-start; }
+
+.home {
+  text-decoration: none; }
 
 input::-webkit-input-placeholder {
   padding-left: 1rem; }
@@ -1410,7 +1108,7 @@ input::placeholder {
     max-width: 44.357rem;
     min-height: 24.928rem;
     z-index: 1;
-    background: url("../img/main-advantages/preload.jpg") center no-repeat; }
+    background: url("../img/main-advantages/preload.webp") center no-repeat; }
     .main-advantages__player-wrapper::before {
       position: absolute;
       content: '';
@@ -1927,7 +1625,7 @@ input::placeholder {
 
 .about {
   padding-bottom: 5.5rem;
-  background: url("../img/about/bg-about.png") no-repeat center 320px #FFF9E6; }
+  background: url("../img/about/bg-about.webp") no-repeat center 320px #FFF9E6; }
   .about__wrapper__text {
     margin-bottom: 2rem; }
   .about__slider__wrapper {
@@ -2031,7 +1729,7 @@ input::placeholder {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: url("../img/map/yandex-before-load-marker.png") no-repeat;
+  background: url("../img/map/yandex-before-load-marker.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2); }
@@ -2113,7 +1811,8 @@ input::placeholder {
     opacity: 1; } }
 
 .footer {
-  background: #363636; }
+  background: #363636;
+  padding-bottom: 2rem; }
   .footer-text__text {
     display: block;
     color: white;
@@ -2124,6 +1823,15 @@ input::placeholder {
     margin-bottom: 0; }
     .footer-text__text--info {
       padding-top: 2.857rem; }
+  .footer-social-likes {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 2.5rem; }
+
+#vk_like {
+  margin-left: 1rem; }
 
 @media screen and (min-width: 1650px) {
   .bg-main-advantages--third {

@@ -76,6 +76,8 @@ function imagemin(done) {
       .pipe(dest('dist/img/')) /* переместили */
   src('img/**/**.svg')
       .pipe(dest('dist/img/')) /* перместили svg файлы в img тоже */
+  src('img/**/**.webp')
+      .pipe(dest('dist/img/'))
   done();
 }
 
