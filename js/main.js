@@ -102,14 +102,26 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next-about',
       prevEl: '.swiper-button-prev-about',
     },
+    // onSlideChangeStart: function(){
+    //   function playVideo(frame) {
+    //       frame.each( function() {
+    //           var url = jQuery(this).attr('src').split('?')[0];
+    //           this.contentWindow.postMessage(JSON.stringify({ method: 'pause' }), url);
+    //       });
+    //   }
+    //   jQuery(".swiper-container-about .swiper-slide").each(function( index ) {
+    //       var element = jQuery(this).find("iframe");     
+    //       playVideo(element);                
+    //   });
+    // }
   }); 
 
-  var fired = false;
-  $(window).scroll(function() {
-    if (fired === false) {
-      fired = true;
+  // var fired = false;
+  // $(window).scroll(function() {
+  //   if (fired === false) {
+  //     fired = true;
       
-      setTimeout(() => {
+  //     setTimeout(() => {
   
         //Переменная для включения/отключения индикатора загрузки
         var spinner = $('.ymap-container').children('.loader');
@@ -132,7 +144,7 @@ $(document).ready(function () {
               // Необходимо указать данный тип макета.
               iconLayout: 'default#image',
               // Своё изображение иконки метки.
-              iconImageHref: '../img/map/location.png',
+              iconImageHref: 'img/map/location.png',
               // Размеры метки.
               iconImageSize: [412, 200],
               // Смещение левого верхнего угла иконки относительно
@@ -233,9 +245,9 @@ $(document).ready(function () {
           ymap();
         
         });
-      }, 1000)
-    }
-  });
+  //     }, 1000)
+  //   }
+  // });
   
 
 
@@ -250,11 +262,9 @@ $(document).ready(function () {
           minlength: 2,
           maxlength: 10
         },
-        userPhone: "required",
-        userQuestion: {
+        userPhone: {
           required: true,
-          minlength: 20,
-          maxlength: 400
+          minlength: 9,
         },
         // compound rule
         userEmail: {
@@ -269,7 +279,10 @@ $(document).ready(function () {
           minlength: "Имя не короче 2 букв",
           maxlength: "Имя не длиннее 10 букв"
         },
-        userPhone: "Телефон обязателен",
+        userPhone: {
+          required: "Телефон обязателен",
+          minlength: "Введите номер полностью"
+        },  
         userEmail: {
           required: "Обязательно укажите email",
           email: "Введите в формате name@domain.com"
@@ -280,6 +293,10 @@ $(document).ready(function () {
   validateForm('.modal__form');
   validateForm('.hero__form');
   validateForm('.offering__form');
+  // очищает инпуты, в ie могут остаться их значения
+  $('input[type="text"]').val(''); 
+  $('input[type="email"]').val('');
+  $('input[type="tel"]').val('');
   /* маска для телефона */
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
 
@@ -295,7 +312,17 @@ $(document).ready(function () {
     });
   })
 
-  function videoPlay(event) {
-    event.target.playVideo();
-  }
+    // останавливаю видео при переходе на другой слайд
+  $(document).on('click', '#next2, #prev2', function(){
+    jQuery("iframe").each(function() {
+      jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
+  });
+  // function videoPlay(event) {
+  //   event.target.playVideo();
+  // }
+
+  // $('.swiper-button-prev-about').on('click', function videoPlay(event) {
+  //   $('player').get(0).stopVideo();
+  // });
+
 });

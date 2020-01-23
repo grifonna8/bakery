@@ -133,13 +133,23 @@
   .card
     &__text
       &-title
-        font-size: 1.1rem
+        font-size: 1.2rem
       &-text
-        font-size: 0.9rem
+        font-size: 1.1rem
   .photos-line
     &__image
       width: 201px
       height: 100px
+  .menu
+    &__text
+      &--downer
+        display: none
+  .call-back
+    display: none
+
+@media screen and ( min-width: 577px ) and ( max-width: 646px )
+  .catalogue
+    padding-bottom: 85rem
 
 @media screen and ( max-width: 576px )
   .header
@@ -232,8 +242,8 @@
     &-navigation
       &-wrapper
         &-about
-          left: 40%
-          transform: translateX (-40%)
+          left: 31%
+          transform: translateX (-31%)
   .swiper-object
       height: 120px         
   .photos

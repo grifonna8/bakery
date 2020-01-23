@@ -210,7 +210,7 @@
             <div class="fact-wrapper advantages__fact-wrapper">
               <div class="advantages__fact-wrapper--inner">
                 <div class="fact-ring">
-                  <img src="img/advantages/small-1.png" alt="">
+                  <img src="img/advantages/small-1.png" alt="" class="advantages__fact-ring__image">
                 </div>
                 <div class="fact-text advantages__fact-text-wrapper">
                   <span class="advantages__fact-text__title">Честность</span>
@@ -223,7 +223,7 @@
             <div class="fact-wrapper advantages__fact-wrapper">
               <div class="advantages__fact-wrapper--inner">
                 <div class="fact-ring">
-                  <img src="img/advantages/small-2.png" alt="">
+                  <img src="img/advantages/small-2.png" alt="" class="advantages__fact-ring__image">
                 </div>
                 <div class="fact-text advantages__fact-text-wrapper">
                   <span class="advantages__fact-text__title">Новаторство</span>
@@ -236,7 +236,7 @@
             <div class="fact-wrapper advantages__fact-wrapper">
               <div class="advantages__fact-wrapper--inner">
                 <div class="fact-ring">
-                  <img src="img/advantages/small-3.png" alt="">
+                  <img src="img/advantages/small-3.png" alt="" class="advantages__fact-ring__image">
                 </div>
                 <div class="fact-text advantages__fact-text-wrapper">
                   <span class="advantages__fact-text__title">Друзья и партнеры</span>
@@ -254,7 +254,7 @@
             <div class="fact-wrapper advantages__fact-wrapper">
               <div class="advantages__fact-wrapper--inner">
                 <div class="fact-ring">
-                  <img src="img/advantages/small-4.png" alt="">
+                  <img src="img/advantages/small-4.png" alt="" class="advantages__fact-ring__image">
                 </div>
                 <div class="fact-text advantages__fact-text-wrapper">
                   <span class="advantages__fact-text__title">Профессионализм</span>
@@ -267,7 +267,7 @@
             <div class="fact-wrapper advantages__fact-wrapper">
               <div class="advantages__fact-wrapper--inner">
                 <div class="fact-ring">
-                  <img src="img/advantages/small-5.png" alt="">
+                  <img src="img/advantages/small-5.png" alt="" class="advantages__fact-ring__image">
                 </div>
                 <div class="fact-text advantages__fact-text-wrapper">
                   <span class="advantages__fact-text__title">Уникальные технологии</span>
@@ -280,7 +280,7 @@
             <div class="fact-wrapper advantages__fact-wrapper">
               <div class="advantages__fact-wrapper--inner">
                 <div class="fact-ring">
-                  <img src="img/advantages/small-6.png" alt="">
+                  <img src="img/advantages/small-6.png" alt="" class="advantages__fact-ring__image">
                 </div>
                 <div class="fact-text advantages__fact-text-wrapper">
                   <span class="advantages__fact-text__title">Социальные программы</span>
@@ -437,11 +437,11 @@
             <!-- /.swiper-container -->
             <div class="swiper-navigation-wrapper-about">
             <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev swiper-button-prev-about">
+              <div class="swiper-button-prev swiper-button-prev-about" id="prev2">
                 <img src="img/arrow-prev.svg" alt="" class="swiper-button-prev-img">
               </div>
               <div class="swiper-pagination swiper-pagination-about"></div>
-              <div class="swiper-button-next swiper-button-next-about">
+              <div class="swiper-button-next swiper-button-next-about" id="next2">
                 <img src="img/arrow-next.svg" alt="" class="swiper-button-next-img">
               </div>
             </div>  
@@ -749,7 +749,7 @@
       var nb_videos = videos.length;
       for (var i=0; i < nb_videos; i++) {
           // Находим постер для видео, зная ID нашего видео
-          videos[i].style.backgroundImage = 'url(../img/about/preload.jpg)';
+          videos[i].style.backgroundImage = 'url(img/about/preload.jpg)';
           // Размещаем над постером кнопку Play, чтобы создать эффект плеера
           var play = document.createElement("div");
           play.setAttribute("class","play");
@@ -768,11 +768,16 @@
               this.parentNode.replaceChild(iframe, this);
           }
       }
-    });</script>
+    });
+    // останавливаю видео при переходе на другой слайд
+</script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=48709629-0610-48b9-b2c8-df1f479db786&lang=ru_RU">
 </script>
+<script>  
+  if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+    document.write('<script src="js/ie.js"><\/script>');</script>
 <script src="js/main.js"></script>
 </body>
 </html>

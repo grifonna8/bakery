@@ -476,29 +476,32 @@ img {
   margin-bottom: 1.785rem; }
 
 .form__safety {
-  font-size: 0.78rem;
+  font-size: 0.714rem;
   color: #FFFFFF;
   max-width: 13.714rem;
   max-height: 1.57rem;
   text-align: center; }
 
-input::-webkit-input-placeholder {
-  padding-left: 1rem; }
+.input::-webkit-input-placeholder {
+  -webkit-transform: translateX(-1rem);
+  transform: translateX(-1rem); }
 
-input::-moz-placeholder {
-  padding-left: 1rem; }
+.input::-moz-placeholder {
+  transform: translateX(-1rem); }
 
-input:-ms-input-placeholder {
-  padding-left: 1rem; }
+.input:-ms-input-placeholder {
+  transform: translateX(-1rem); }
 
-input::-ms-input-placeholder {
-  padding-left: 1rem; }
+.input::-ms-input-placeholder {
+  transform: translateX(-1rem); }
 
-input::placeholder {
-  padding-left: 1rem; }
+.input::placeholder {
+  -webkit-transform: translateX(-1rem);
+  transform: translateX(-1rem); }
 
 .hero__input {
-  outline: none; }
+  outline: none;
+  padding-left: 1rem; }
 
 .hero__form {
   position: relative;
@@ -571,7 +574,8 @@ input::placeholder {
   width: 17.92rem;
   border: none;
   border-radius: 3px;
-  outline: none; }
+  outline: none;
+  padding-left: 1rem; }
   .offering__input::-webkit-input-placeholder {
     color: #2f2f2f; }
   .offering__input::-moz-placeholder {
@@ -601,7 +605,8 @@ input::placeholder {
   padding-top: 3px;
   padding-bottom: 3px;
   color: #ee1212;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 0.9rem; }
 
 #hero-user-phone-error {
   position: absolute;
@@ -611,7 +616,8 @@ input::placeholder {
   padding-top: 3px;
   padding-bottom: 3px;
   color: #ee1212;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 0.9rem; }
 
 #hero-user-email-error {
   position: absolute;
@@ -621,7 +627,8 @@ input::placeholder {
   padding-top: 3px;
   padding-bottom: 3px;
   color: #ee1212;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 0.9rem; }
 
 #modal-user-name-error {
   position: absolute;
@@ -631,7 +638,8 @@ input::placeholder {
   padding-top: 3px;
   padding-bottom: 3px;
   color: #ee1212;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 0.9rem; }
 
 #modal-user-phone-error {
   position: absolute;
@@ -641,7 +649,8 @@ input::placeholder {
   padding-top: 3px;
   padding-bottom: 3px;
   color: #ee1212;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 0.9rem; }
 
 #modal-user-email-error {
   position: absolute;
@@ -651,7 +660,8 @@ input::placeholder {
   padding-top: 3px;
   padding-bottom: 3px;
   color: #ee1212;
-  z-index: 1; }
+  z-index: 1;
+  font-size: 0.9rem; }
 
 #offering-user-name-error {
   position: absolute;
@@ -860,7 +870,8 @@ input::placeholder {
   .modal__input {
     margin-top: 6px;
     width: 100%;
-    height: 3.214rem; }
+    height: 3.214rem;
+    padding-left: 1rem; }
   .modal__button {
     height: 4.07rem;
     background-color: #10E9C6;
@@ -879,7 +890,7 @@ input::placeholder {
     margin-top: 0.857rem;
     margin-bottom: 1.785rem; }
   .modal__safety {
-    font-size: 0.78rem;
+    font-size: 0.7rem;
     color: #FFFFFF;
     max-width: 13.714rem;
     max-height: 1.57rem;
@@ -1119,7 +1130,7 @@ input::placeholder {
       z-index: 2; }
 
 .video__play {
-  z-index: 3;
+  z-index: 10;
   cursor: pointer; }
 
 .bg-main-advantages--first {
@@ -1821,7 +1832,8 @@ input::placeholder {
     font-size: 1.071rem;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: 100; }
     .footer-text__text--info {
       padding-top: 2.857rem; }
   .footer-social-likes {
@@ -1962,12 +1974,20 @@ input::placeholder {
       -webkit-box-direction: normal;
       flex-direction: column; }
   .card__text-title {
-    font-size: 1.1rem; }
+    font-size: 1.2rem; }
   .card__text-text {
-    font-size: 0.9rem; }
+    font-size: 1.1rem; }
   .photos-line__image {
     width: 201px;
-    height: 100px; } }
+    height: 100px; }
+  .menu__text--downer {
+    display: none; }
+  .call-back {
+    display: none; } }
+
+@media screen and (min-width: 577px) and (max-width: 646px) {
+  .catalogue {
+    padding-bottom: 85rem; } }
 
 @media screen and (max-width: 576px) {
   .header {
@@ -2043,9 +2063,9 @@ input::placeholder {
     width: 250px !important;
     height: 270px !important; }
   .swiper-navigation-wrapper-about {
-    left: 40%;
-    -webkit-transform: translateX -40%;
-    transform: translateX -40%; }
+    left: 31%;
+    -webkit-transform: translateX -31%;
+    transform: translateX -31%; }
   .swiper-object {
     height: 120px; }
   .photos__text {

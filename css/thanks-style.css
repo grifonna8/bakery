@@ -4,8 +4,14 @@
   height: 100vh;
 }
 
+.contacts__phone:hover {
+  box-shadow: 0 5px 15px rgba(226, 91, 68, 0.7);
+  -webkit-transition: box-shadow .2s;
+  transition: box-shadow .2s; 
+}
+
 @media screen and (max-width: 576px) {
   .hero {
-    background: none
+    background: none;
   }
 }
