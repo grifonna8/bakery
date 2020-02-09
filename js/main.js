@@ -186,8 +186,7 @@ $(document).ready(function () {
           for (var k in layer) {
             if (layer.hasOwnProperty(k)) {
               if (
-                layer[k] instanceof ymaps.layer.tileContainer.CanvasContainer
-                || layer[k] instanceof ymaps.layer.tileContainer.DomContainer
+                layer[k] instanceof ymaps.layer.tileContainer.CanvasContainer || layer[k] instanceof ymaps.layer.tileContainer.DomContainer
               ) {
                 return layer[k];
               }
@@ -237,7 +236,7 @@ $(document).ready(function () {
               }
             }
           );  
-        }
+        };
         
         $(function() {
         
@@ -310,16 +309,17 @@ $(document).ready(function () {
         'onReady': videoPlay,
       }
     });
-  })
-
+  });
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
     // останавливаю видео при переходе на другой слайд
   $(document).on('click', '#next2, #prev2', function(){
     jQuery("iframe").each(function() {
-      jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
+      jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
   });
-  // function videoPlay(event) {
-  //   event.target.playVideo();
-  // }
+  
 
   // $('.swiper-button-prev-about').on('click', function videoPlay(event) {
   //   $('player').get(0).stopVideo();

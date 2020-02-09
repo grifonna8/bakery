@@ -19,7 +19,7 @@ function bs() {
   watch("./sass/**/*.sass", serveSass);
   watch("./sass/**/*.scss", serveSass);
   watch("./js/*.js").on('change', browserSync.reload);
-};
+}
 
 function serveSass() {
   return src("./sass/**/*.sass", "./sass/**/*.scss")
@@ -29,7 +29,7 @@ function serveSass() {
       }))
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
-};
+}
 
 function buildCSS(done) {
   src('css/**/**.css')
@@ -73,9 +73,9 @@ function fonts(done) {
 function imagemin(done) {
   src('img//**/*.{png,jpg,jpeg}')
       .pipe(tinypng({key: 'NsDLdH3vDc0JRz5yjSJHTjYM2qxSwTGS',})) /* сжали */
-      .pipe(dest('dist/img/')) /* переместили */
+      .pipe(dest('dist/img/')); /* переместили */
   src('img/**/**.svg')
-      .pipe(dest('dist/img/')) /* перместили svg файлы в img тоже */
+      .pipe(dest('dist/img/')); /* перместили svg файлы в img тоже */
   done();
 }
 
