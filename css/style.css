@@ -1126,6 +1126,21 @@ input::placeholder {
 .video__play {
   z-index: 10;
   cursor: pointer; }
+  .video__play--first {
+    z-index: 10;
+    cursor: pointer; }
+  .video__play--second {
+    z-index: 10;
+    cursor: pointer; }
+  .video__play--third {
+    z-index: 10;
+    cursor: pointer; }
+  .video__play--fourth {
+    z-index: 10;
+    cursor: pointer; }
+  .video__play--fifth {
+    z-index: 10;
+    cursor: pointer; }
 
 .bg-main-advantages--first {
   display: none;
@@ -1675,12 +1690,16 @@ input::placeholder {
   transform: translateX -45%; }
 
 .youtube {
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../img/about/preload.jpg") center;
+  background-size: cover;
   position: relative;
-  display: inline-block;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
   overflow: hidden;
-  cursor: pointer;
   width: 419px;
   height: 250px; }
   .youtube::before {
@@ -1690,19 +1709,6 @@ input::placeholder {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px; }
-
-.play {
-  background: url("../img/main-advantages/play.png") no-repeat;
-  background-size: 100% auto;
-  position: absolute;
-  height: 89px;
-  width: 43px;
-  -webkit-transition: none;
-  transition: none;
-  left: 45%;
-  top: 35%;
-  -webkit-transform: translate -45%, -35%;
-  transform: translate -45%, -35%; }
 
 .offering {
   padding-bottom: 1rem;
@@ -2022,7 +2028,11 @@ input::placeholder {
     bottom: 8.5rem;
     left: 20%;
     -webkit-transform: translateX -20%;
-    transform: translateX -20%; } }
+    transform: translateX -20%; }
+    .swiper-navigation-wrapper-about {
+      left: 40%;
+      -webkit-transform: translateX -40%;
+      transform: translateX -40%; } }
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .menu__text--upper {
@@ -2044,6 +2054,8 @@ input::placeholder {
     #swiper-container-about {
       width: 250px;
       height: 270px; }
+  .youtube {
+    width: 250px; }
   #player--first {
     width: 250px !important;
     height: 270px !important; }
@@ -2056,11 +2068,19 @@ input::placeholder {
     height: 270px !important;
     width: 250px !important;
     height: 270px !important; }
-  .swiper-navigation-wrapper-about {
-    left: 31%;
-    -webkit-transform: translateX -31%;
-    transform: translateX -31%; }
   .swiper-object {
     height: 120px; }
   .photos__text {
     font-size: 1.1rem; } }
+
+@media screen and (min-width: 319px) and (max-width: 420px) {
+  -navigation-wrapper-about {
+    left: 35%;
+    -webkit-transform: translateX -35%;
+    transform: translateX -35%; } }
+
+@media screen and (min-width: 421px) and (max-width: 575px) {
+  -navigation-wrapper-about {
+    left: 15%;
+    -webkit-transform: translateX -15%;
+    transform: translateX -15%; } }

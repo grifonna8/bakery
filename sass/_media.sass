@@ -197,6 +197,9 @@
         bottom: 8.5rem
         left: 20%
         transform: translateX (-20%)
+        &-about
+          left: 40%
+          transform: translateX (-40%)
 
 @media screen and ( min-width: 320px ) and ( max-width: 575px )
   .menu
@@ -223,6 +226,8 @@
       &-about
         width: 250px
         height: 270px
+  .youtube
+    width: 250px
   #player--first
     width: 250px !important
     height: 270px !important
@@ -238,17 +243,26 @@
     #player--fifth
     width: 250px !important
     height: 270px !important
-  .swiper
-    &-navigation
-      &-wrapper
-        &-about
-          left: 31%
-          transform: translateX (-31%)
   .swiper-object
       height: 120px         
   .photos
     &__text
       font-size: 1.1rem
+
+@media screen and ( min-width: 319px ) and ( max-width: 420px )
+  .swiper
+  &-navigation
+    &-wrapper
+      &-about
+        left: 35%
+        transform: translateX (-35%)
+@media screen and ( min-width: 421px ) and ( max-width: 575px )
+  .swiper
+  &-navigation
+    &-wrapper
+      &-about
+        left: 15%
+        transform: translateX (-15%)
     
 
   

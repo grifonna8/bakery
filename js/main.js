@@ -310,9 +310,74 @@ $(document).ready(function () {
       }
     });
   });
+
+  var player1;
+  $('.video__play--first').on('click', function onYouTubeIframeAPIReady() {
+    player1 = new YT.Player('player1', {
+      height: '250',
+      width: '100%',
+      videoId: 'jHeTxdrGzTU',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  });
+  
+  var player2;
+  $('.video__play--second').on('click', function onYouTubeIframeAPIReady() {
+    player2 = new YT.Player('player2', {
+      height: '250',
+      width: '100%',
+      videoId: '1eM2b4Gl7bg',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  });
+  
+  var player3;
+  $('.video__play--third').on('click', function onYouTubeIframeAPIReady() {
+    player3 = new YT.Player('player3', {
+      height: '250',
+      width: '100%',
+      videoId: '-JTqGw2EycM',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  });
+  
+  var player4;
+  $('.video__play--fourth').on('click', function onYouTubeIframeAPIReady() {
+    player4 = new YT.Player('player4', {
+      height: '250',
+      width: '100%',
+      videoId: 'NW_TWIxpLJg',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  });
+  
+  var player5;
+  $('.video__play--fifth').on('click', function onYouTubeIframeAPIReady() {
+    player5 = new YT.Player('player5', {
+      height: '250',
+      width: '100%',
+      videoId: '6b0MfgJY5xU',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  });
+  
   function videoPlay(event) {
     event.target.playVideo();
   }
+  // функция для того, чтобы нормально отображалось последнее видео, иначе звук есть, а видео нет
+  $('.video__play--fifth').on('click', function() {
+    $('.video__play--fifth').hide()
+  });
     // останавливаю видео при переходе на другой слайд
   $(document).on('click', '#next2, #prev2', function(){
     jQuery("iframe").each(function() {
